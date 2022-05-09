@@ -1,0 +1,187 @@
+#page1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page2 {
+    position: absolute;
+    left: 50vw;
+}
+
+.page2-hidden {
+    top: 255vh;
+}
+
+.page2-shown {
+    top: 55vh;
+}
+
+.page1-hidden {
+    top: -200vh;
+}
+
+.page1-shown {
+    top: 0;
+}
+
+#controller {
+    position: absolute;
+    width: 45vw;
+    left: 50%;
+    top: 52.5%;
+    transform: translate(-50%, -50%);
+}
+
+#prev {
+    position: absolute;
+    width: 10vw;
+    height: 14vh;
+    left: -4.5vw;
+    top: -54vh;
+    font-family: Heebo;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease;
+    z-index: 10;
+}
+
+#prev:hover {
+    text-shadow: 1px 1px 50px black;
+}
+
+@keyframes page-down-first {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100vh;
+    }
+}
+
+@keyframes page-down-second {
+    0% {
+        top: 155vh;
+    }
+    100% {
+        top: 55vh;
+    }
+}
+
+@keyframes page-up-first {
+    0% {
+        top: -100vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes page-up-second {
+    0% {
+        top: 55vh;
+    }
+    100% {
+        top: 155vh;
+    }
+}
+
+.animfirst-play {
+    animation: page-down-first 2s;
+}
+
+.animsecond-play {
+    animation: page-down-second 2s;
+}
+
+.animfirst-playrev {
+    animation: page-up-first 2s;
+}
+
+.animsecond-playrev {
+    animation: page-up-second 2s;
+}
+
+
+/* buttons */
+
+
+/* אנטנות */
+
+#btc1 {
+    position: absolute;
+    left: 6vw;
+    top: -49vh;
+}
+
+
+/* כפתור הדלקה */
+
+#btc2 {
+    position: absolute;
+    left: 13vw;
+    top: -16vh;
+}
+
+
+/* גויסטיק */
+
+#btc3 {
+    position: absolute;
+    left: 12vw;
+    top: -10vh;
+}
+
+
+/* כפתור שחור */
+
+#btc4 {
+    position: absolute;
+    left: 5vw;
+    top: -6vh;
+}
+
+
+/* כפתור אדום */
+
+#btc5 {
+    position: absolute;
+    left: -9.5vw;
+    top: -6vh;
+}
+
+
+/* מסך */
+
+#btc6 {
+    position: absolute;
+    left: -10vw;
+    top: -17.5vh;
+}
+
+
+/* כפתור חזרה הביתה */
+
+#btc6 {
+    position: absolute;
+    left: -17vw;
+    top: -17vh;
+}
+
+
+/* צד */
+
+#btc7 {
+    position: absolute;
+    left: -19.5vw;
+    top: -14vh;
+}
+
+
+/* מחזיק טאבלט */
+
+#btc8 {
+    position: absolute;
+    left: -22vw;
+    top: 30vh;
+}

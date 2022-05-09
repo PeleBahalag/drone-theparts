@@ -1,0 +1,323 @@
+html,
+body {
+    user-select: none;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+p {
+    position: relative;
+    text-align: center;
+    font-family: Heebo;
+    direction: rtl;
+    line-height: 1vmin;
+    top: 16vmin;
+}
+
+#drown {
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+}
+
+#logo-sayarim {
+    z-index: 99999;
+    position: absolute;
+    left: 0;
+    margin: 1vw;
+    top: 0;
+    width: 5vw;
+    cursor: pointer;
+}
+
+#logo-sayarim:hover+#credits,
+#credits:hover {
+    left: 0;
+}
+
+#credits {
+    position: relative;
+    left: -60vw;
+    z-index: 999999;
+    margin: 1vw;
+    top: 0;
+    width: 64vmin;
+    height: 25vh;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease;
+    background: radial-gradient(#e6e7f1, #c6d1f1);
+}
+
+#pele {
+    position: absolute;
+    left: 25vmin;
+    top: 2vmin;
+    width: 14vmin;
+    z-index: 998;
+}
+
+
+/* מנועים */
+
+#bt1 {
+    position: absolute;
+    left: 18vw;
+    top: 52%;
+}
+
+
+/* פרופלור */
+
+#bt2 {
+    position: absolute;
+    left: 67vw;
+    top: 55%;
+}
+
+
+/* כפתור */
+
+#bt3 {
+    position: absolute;
+    left: 77.8vw;
+    top: 63%;
+}
+
+
+/* חיישנים */
+
+#bt4 {
+    position: absolute;
+    left: 19vw;
+    top: 73%;
+}
+
+
+/* מצלמה */
+
+#bt5 {
+    position: absolute;
+    left: 44vw;
+    top: 64%;
+}
+
+
+/* עיגולים */
+
+#bt6 {
+    position: absolute;
+    left: 54.5vw;
+    top: 52%;
+}
+
+
+/* עיגול למעלה */
+
+#bt7 {
+    position: absolute;
+    left: 49vw;
+    top: 32%;
+}
+
+
+/* למעלה */
+
+#bt8 {
+    position: absolute;
+    left: 49vw;
+    top: 23%;
+}
+
+
+/* btn */
+
+.circle {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#inner-dot {
+    opacity: 1 !important;
+}
+
+#outer2 {
+    opacity: 0;
+    z-index: 12;
+    transition: all .5s ease .1s;
+}
+
+#outer3 {
+    opacity: 0;
+    z-index: 12;
+    transition: all .3s ease .3s;
+}
+
+#btn:hover .circle {
+    opacity: 0.5;
+}
+
+#next {
+    position: absolute;
+    width: 10vw;
+    height: 14vh;
+    left: 45vw;
+    top: 83vh;
+    font-family: Heebo;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#next:hover {
+    text-shadow: 1px 1px 50px black;
+}
+
+
+/*  */
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 9vw;
+    height: 4.8vh;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: Heebo;
+    font-weight: bold;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    top: 85vh;
+    left: 4vw;
+}
+
+.btn-6 {
+    background: rgb(201, 35, 35);
+    background: radial-gradient(circle, rgba(201, 35, 35, 1) 0%, rgba(219, 120, 120, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 90%;
+}
+
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, .4), 4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover {
+    background: transparent;
+    color: rgba(201, 35, 35, 1);
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, .4), 4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+    width: 100%;
+}
+
+.btn-6 span:hover:after {
+    width: 100%;
+}
