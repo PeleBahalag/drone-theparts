@@ -1,7 +1,19 @@
 html,
 body {
+    width: 100vw;
+    height: 200vh;
     user-select: none;
     overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(139, 189, 223) 100%);
+    background-size: 100vw 200vh;
+}
+
+#ltldrown {
+    width: 80vw;
+    /* height: 100vh; */
+    position: fixed;
+    left: 10vw;
+    top: 0;
 }
 
 .card:hover {
@@ -43,8 +55,25 @@ p {
     text-align: center;
     font-family: Heebo;
     direction: rtl;
+    line-height: 2vmin;
+}
+
+.card h1 {
+    position: relative;
+    text-align: center;
+    font-family: Heebo;
+    direction: rtl;
+    line-height: 5vmin;
+    top: 2vmin;
+}
+
+.card h4 {
+    position: relative;
+    text-align: center;
+    font-family: Heebo;
+    direction: rtl;
     line-height: 1vmin;
-    top: 16vmin;
+    top: 0vmin;
 }
 
 #drown {
@@ -68,27 +97,31 @@ p {
 #logo-sayarim:hover+#credits,
 #credits:hover {
     left: 0;
+    opacity: 1;
 }
 
 #credits {
     position: relative;
-    left: -60vw;
+    left: -100vw;
     z-index: 999999;
     margin: 1vw;
     top: 0;
-    width: 64vmin;
-    height: 25vh;
+    opacity: 0;
+    font-size: 1vw;
+    width: 50vmin;
+    height: 14vw;
     grid-template-rows: 20px 50px 1fr 50px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
     transition: all .2s ease;
     background: radial-gradient(#e6e7f1, #c6d1f1);
+    padding-top: 2vw;
 }
 
 #pele {
     position: absolute;
-    left: 25vmin;
-    top: 2vmin;
+    left: 18vmin;
+    top: 8vw;
     width: 14vmin;
     z-index: 998;
 }
@@ -96,7 +129,7 @@ p {
 
 /* מנועים */
 
-#bt1 {
+#btd1 {
     position: absolute;
     left: 18vw;
     top: 52%;
@@ -105,7 +138,7 @@ p {
 
 /* פרופלור */
 
-#bt2 {
+#btd2 {
     position: absolute;
     left: 67vw;
     top: 55%;
@@ -114,7 +147,7 @@ p {
 
 /* כפתור */
 
-#bt3 {
+#btd3 {
     position: absolute;
     left: 77.8vw;
     top: 63%;
@@ -123,7 +156,7 @@ p {
 
 /* חיישנים */
 
-#bt4 {
+#btd4 {
     position: absolute;
     left: 19vw;
     top: 73%;
@@ -132,7 +165,7 @@ p {
 
 /* מצלמה */
 
-#bt5 {
+#btd5 {
     position: absolute;
     left: 44vw;
     top: 64%;
@@ -141,7 +174,7 @@ p {
 
 /* עיגולים */
 
-#bt6 {
+#btd6 {
     position: absolute;
     left: 54.5vw;
     top: 52%;
@@ -150,7 +183,7 @@ p {
 
 /* עיגול למעלה */
 
-#bt7 {
+#btd7 {
     position: absolute;
     left: 49vw;
     top: 32%;
@@ -159,10 +192,94 @@ p {
 
 /* למעלה */
 
-#bt8 {
+#btd8 {
     position: absolute;
     left: 49vw;
     top: 23%;
+}
+
+
+/* page 2 buttons */
+
+
+/* אנטנות */
+
+#btc1 {
+    position: absolute;
+    left: 6vw;
+    top: -49vh;
+}
+
+
+/* כפתור הדלקה */
+
+#btc2 {
+    position: absolute;
+    left: 13vw;
+    top: -16vh;
+}
+
+
+/* גויסטיק */
+
+#btc3 {
+    position: absolute;
+    left: 12vw;
+    top: -10vh;
+}
+
+
+/* כפתור שחור */
+
+#btc4 {
+    position: absolute;
+    left: 5vw;
+    top: -6vh;
+}
+
+
+/* כפתור אדום */
+
+#btc5 {
+    position: absolute;
+    left: -9.5vw;
+    top: -6vh;
+}
+
+
+/* מסך */
+
+#btc6 {
+    position: absolute;
+    left: -10vw;
+    top: -17.5vh;
+}
+
+
+/* כפתור חזרה הביתה */
+
+#btc6 {
+    position: absolute;
+    left: -17vw;
+    top: -17vh;
+}
+
+
+/* צד */
+
+#btc7 {
+    position: absolute;
+    left: -19.5vw;
+    top: -14vh;
+}
+
+
+/* מחזיק טאבלט */
+
+#btc8 {
+    position: absolute;
+    left: -22vw;
+    top: 30vh;
 }
 
 
@@ -197,6 +314,7 @@ p {
 }
 
 #next {
+    font-size: 1vw;
     position: absolute;
     width: 10vw;
     height: 14vh;
@@ -238,6 +356,7 @@ button {
     outline: none;
     top: 85vh;
     left: 4vw;
+    z-index: 9999;
 }
 
 .btn-6 {

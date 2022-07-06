@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
 <head>
-    <title>רחפן</title>
-    <!-- <link href="/assets/libraries/bulma/css/bulma-rtl.css" rel="stylesheet" /> -->
+    <title>חלקי הרחפן והשלט</title>
     <link href="./style.css" rel="stylesheet" />
     <link href="./style2.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="information.json"></script>
     <script src="./script.js"></script>
 </head>
 
 <body>
+    <img src="./assets/graphics/newgif.gif" id="ltldrown" />
     <button class="custom-btn btn-6"><span>← למבחן</span></button>
     <img id="logo-sayarim" src="./assets/graphics/סמל סיירים ללא רקע.png" />
     <div id="credits" class="card">
@@ -28,7 +29,7 @@
         <img id="drown" src="./assets/graphics/drown.svg" />
 
         <!-- buttons -->
-        <div id="bt1" class="drown-btn">
+        <div id="btd1" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -36,7 +37,7 @@
             </div>
         </div>
 
-        <div id="bt2" class="drown-btn">
+        <div id="btd2" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -44,7 +45,7 @@
             </div>
         </div>
 
-        <div id="bt3" class="drown-btn">
+        <div id="btd3" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -52,7 +53,7 @@
             </div>
         </div>
 
-        <div id="bt4" class="drown-btn">
+        <div id="btd4" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -60,7 +61,7 @@
             </div>
         </div>
 
-        <div id="bt5" class="drown-btn">
+        <div id="btd5" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -68,7 +69,7 @@
             </div>
         </div>
 
-        <div id="bt6" class="drown-btn">
+        <div id="btd6" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -76,7 +77,7 @@
             </div>
         </div>
 
-        <div id="bt7" class="drown-btn">
+        <div id="btd7" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
@@ -84,13 +85,23 @@
             </div>
         </div>
 
-        <div id="bt8" class="drown-btn">
+        <div id="btd8" class="drown-btn">
             <div id="btn">
                 <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
                 <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
                 <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
             </div>
         </div>
+
+        <!-- Info Card -->
+        <div id="info-page1" class="card">
+            <p id="x">x</p>
+            <h1 id="info-page1-ttl">שם החלק</h1>
+            <h4 id="info-page1-subttl">כותרת משנה</h4>
+            <p id="info-page1-para">כאן יוצג הסבר על החלק</p>
+            <p id="info-page1-para2">כאן יוצג הסבר על החלק</p>
+        </div>
+
     </div>
 
     <!-- Page 2- the controller -->

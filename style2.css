@@ -34,6 +34,7 @@
 }
 
 #prev {
+    font-size: 1vw;
     position: absolute;
     width: 10vw;
     height: 14vh;
@@ -49,6 +50,9 @@
 #prev:hover {
     text-shadow: 1px 1px 50px black;
 }
+
+
+/* up & down */
 
 @keyframes page-down-first {
     0% {
@@ -103,85 +107,70 @@
 }
 
 
-/* buttons */
+/* Information Cards */
 
-
-/* אנטנות */
-
-#btc1 {
-    position: absolute;
-    left: 6vw;
-    top: -49vh;
+#info-page1 {
+    display: none;
+    font-family: Heebo;
+    position: fixed;
+    opacity: 0;
+    left: 30vw;
+    top: 25vh;
+    z-index: 9999999;
+    margin: 1vw;
+    width: 40vw;
+    height: 20vw;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all .5s ease;
+    background: radial-gradient(#ffffff, #fffffe);
 }
 
-
-/* כפתור הדלקה */
-
-#btc2 {
+#x {
     position: absolute;
-    left: 13vw;
-    top: -16vh;
+    left: 0;
+    top: 0;
+    margin: 1vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: all 0.1s;
 }
 
-
-/* גויסטיק */
-
-#btc3 {
-    position: absolute;
-    left: 12vw;
-    top: -10vh;
+#x:hover {
+    font-size: 2vw;
 }
 
-
-/* כפתור שחור */
-
-#btc4 {
-    position: absolute;
-    left: 5vw;
-    top: -6vh;
+.showCard {
+    animation: showCard .8s ease;
+    opacity: 1 !important;
 }
 
-
-/* כפתור אדום */
-
-#btc5 {
-    position: absolute;
-    left: -9.5vw;
-    top: -6vh;
+@keyframes showCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-
-/* מסך */
-
-#btc6 {
-    position: absolute;
-    left: -10vw;
-    top: -17.5vh;
+#info-page1-ttl {
+    font-size: 2vw;
 }
 
-
-/* כפתור חזרה הביתה */
-
-#btc6 {
-    position: absolute;
-    left: -17vw;
-    top: -17vh;
+#info-page1-subttl {
+    font-size: 1.3vw;
+    padding: 0 2vw 0 2vw;
+    line-height: 1.5vw;
 }
 
-
-/* צד */
-
-#btc7 {
-    position: absolute;
-    left: -19.5vw;
-    top: -14vh;
+#info-page1-para {
+    font-size: 1vw;
+    padding: 1vw 2vw .5vw 2vw;
 }
 
-
-/* מחזיק טאבלט */
-
-#btc8 {
-    position: absolute;
-    left: -22vw;
-    top: 30vh;
+#info-page1-para2 {
+    font-size: 1vw;
+    padding: 0 2vw 0 2vw;
 }
