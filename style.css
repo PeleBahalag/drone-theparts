@@ -342,14 +342,14 @@ button {
 }
 
 .custom-btn {
-    width: 9vw;
+    width: 18vh;
     height: 4.8vh;
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
     font-family: Heebo;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.8vmax;
     letter-spacing: 1px;
     background: transparent;
     cursor: pointer;
