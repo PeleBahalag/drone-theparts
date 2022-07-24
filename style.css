@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Heebo';
+    src: url('./assets/fonts/Heebo-VariableFont_wght.ttf');
+}
+
 html,
 body {
+    font-family: Heebo;
     margin: 0;
     width: 100vw;
     height: 100vh;
