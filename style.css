@@ -131,8 +131,8 @@ p {
 
 #btd1 {
     position: absolute;
-    left: 18vw;
-    top: 52%;
+    left: 19vw;
+    top: 54vh;
 }
 
 
@@ -141,16 +141,16 @@ p {
 #btd2 {
     position: absolute;
     left: 67vw;
-    top: 55%;
+    top: 55vh;
 }
 
 
-/* כפתור */
+/* led */
 
 #btd3 {
     position: absolute;
-    left: 77.8vw;
-    top: 63%;
+    left: 78vw;
+    top: 62vh;
 }
 
 
@@ -158,8 +158,8 @@ p {
 
 #btd4 {
     position: absolute;
-    left: 19vw;
-    top: 73%;
+    left: 21vw;
+    top: 72vh;
 }
 
 
@@ -168,7 +168,7 @@ p {
 #btd5 {
     position: absolute;
     left: 44vw;
-    top: 64%;
+    top: 64vh;
 }
 
 
@@ -177,7 +177,7 @@ p {
 #btd6 {
     position: absolute;
     left: 54.5vw;
-    top: 52%;
+    top: 55%;
 }
 
 
@@ -186,7 +186,7 @@ p {
 #btd7 {
     position: absolute;
     left: 49vw;
-    top: 32%;
+    top: 35vh;
 }
 
 
@@ -195,7 +195,7 @@ p {
 #btd8 {
     position: absolute;
     left: 49vw;
-    top: 23%;
+    top: 23vh;
 }
 
 
@@ -207,7 +207,7 @@ p {
 #btc1 {
     position: absolute;
     left: 6vw;
-    top: -49vh;
+    top: -45vh;
 }
 
 
@@ -261,7 +261,7 @@ p {
 #btc6 {
     position: absolute;
     left: -17vw;
-    top: -17vh;
+    top: -15vh;
 }
 
 
@@ -270,7 +270,7 @@ p {
 #btc7 {
     position: absolute;
     left: -19.5vw;
-    top: -14vh;
+    top: -12vh;
 }
 
 
@@ -287,8 +287,8 @@ p {
 
 .circle {
     position: absolute;
-    width: 5vw;
-    height: 5vw;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     z-index: 10;
 }
@@ -371,7 +371,8 @@ button {
     position: relative;
     display: block;
     width: 100%;
-    height: 90%;
+    height: 30%;
+    bottom: 70%;
 }
 
 .btn-6:before,

@@ -1,0 +1,425 @@
+@media screen and (max-width: 1920px) {
+    /* מנועים */
+    #btd1 {
+        left: 19vw;
+        top: 53vh;
+    }
+    /* פרופלור */
+    #btd2 {
+        left: 67vw;
+        top: 56vh;
+    }
+    /* led */
+    #btd3 {
+        left: 78vw;
+        top: 64vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 21vw;
+        top: 71vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 44vw;
+        top: 68vh;
+    }
+    /* עיגולים */
+    #btd6 {
+        left: 54.5vw;
+        top: 54%;
+    }
+    /* עיגול למעלה */
+    #btd7 {
+        left: 49vw;
+        top: 35vh;
+    }
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 25vh;
+    }
+    /* page 2 buttons */
+    /* אנטנות */
+    #btc1 {
+        left: 6vw;
+        top: -45vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -16vh;
+    }
+    /* גויסטיק */
+    #btc3 {
+        left: 12vw;
+        top: -10vh;
+    }
+    /* כפתור שחור */
+    #btc4 {
+        left: 5vw;
+        top: -6vh;
+    }
+    /* כפתור אדום */
+    #btc5 {
+        left: -9.5vw;
+        top: -6vh;
+    }
+    /* מסך */
+    #btc6 {
+        left: -10vw;
+        top: -17.5vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -17vw;
+        top: -15vh;
+    }
+    /* צד */
+    #btc7 {
+        left: -19.5vw;
+        top: -12vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -22vw;
+        top: 30vh;
+    }
+}
+
+@media screen and (max-width: 1790px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 26vh;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 28vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 46vw;
+        top: 67vh;
+    }
+    /* עיגול למעלה */
+    #btd7 {
+        left: 49vw;
+        top: 36vh;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 29vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 46vw;
+        top: 66vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 21vw;
+        top: 66vh;
+    }
+    /* עיגול למעלה */
+    #btd7 {
+        left: 49vw;
+        top: 38vh;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 30vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 46vw;
+        top: 65vh;
+    }
+    /* led */
+    #btd3 {
+        left: 77vw;
+        top: 60vh;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 31vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 46vw;
+        top: 63vh;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 33vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 45vw;
+        top: 63vh;
+    }
+    /* מנועים */
+    #btd1 {
+        left: 19vw;
+        top: 52vh;
+    }
+    /* פרופלור */
+    #btd2 {
+        left: 67vw;
+        top: 54vh;
+    }
+    /* led */
+    #btd3 {
+        left: 77vw;
+        top: 58vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 21vw;
+        top: 65vh;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    /* מצלמה */
+    #btd5 {
+        left: 45vw;
+        top: 61vh;
+    }
+    /* led */
+    #btd3 {
+        left: 77vw;
+        top: 57vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 21vw;
+        top: 63vh;
+    }
+    /* עיגולים */
+    #btd6 {
+        left: 54.5vw;
+        top: 53%;
+    }
+    /* עיגול למעלה */
+    #btd7 {
+        left: 49vw;
+        top: 39vh;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 34vh;
+    }
+    /* פרופלור */
+    #btd2 {
+        left: 67vw;
+        top: 53vh;
+    }
+    /* מנועים */
+    #btd1 {
+        left: 19vw;
+        top: 50vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 45vw;
+        top: 57vh;
+    }
+    /* led */
+    #btd3 {
+        left: 77vw;
+        top: 54vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 20vw;
+        top: 58vh;
+    }
+    /* עיגולים */
+    #btd6 {
+        left: 54.5vw;
+        top: 50%;
+    }
+    /* עיגול למעלה */
+    #btd7 {
+        left: 49vw;
+        top: 40vh;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 35vh;
+    }
+    /* פרופלור */
+    #btd2 {
+        left: 67vw;
+        top: 52vh;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 36vh;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 37vh;
+    }
+    /* פרופלור */
+    #btd2 {
+        left: 67vw;
+        top: 50vh;
+    }
+    /* מנועים */
+    #btd1 {
+        left: 19vw;
+        top: 49vh;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 45vw;
+        top: 55vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 20vw;
+        top: 57vh;
+    }
+    /* עיגול למעלה */
+    #btd7 {
+        left: 49vw;
+        top: 42vh;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    /* למעלה */
+    #btd8 {
+        left: 49vw;
+        top: 38vh;
+    }
+    /* פרופלור */
+    #btd2 {
+        left: 67vw;
+        top: 49vh;
+    }
+    /* מנועים */
+    #btd1 {
+        left: 19vw;
+        top: 48vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 20vw;
+        top: 55vh;
+    }
+    /* led */
+    #btd3 {
+        left: 75vw;
+        top: 52vh;
+    }
+    /* עיגולים */
+    #btd6 {
+        left: 54.5vw;
+        top: 49%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* למעלה */
+    #btd8 {
+        left: 47vw;
+        top: 39vh;
+    }
+    /* מנועים */
+    #btd1 {
+        left: 18vw;
+        top: 48vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 19vw;
+        top: 53vh;
+    }
+    /* led */
+    #btd3 {
+        left: 74vw;
+        top: 51vh;
+    }
+    /* עיגולים */
+    #btd6 {
+        left: 53.5vw;
+        top: 49%;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 45vw;
+        top: 53vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* למעלה */
+    #btd8 {
+        left: 47vw;
+        top: 39vh;
+    }
+    /* מנועים */
+    #btd1 {
+        left: 18vw;
+        top: 47vh;
+    }
+    /* חיישנים */
+    #btd4 {
+        left: 19vw;
+        top: 51vh;
+    }
+    /* led */
+    #btd3 {
+        left: 74vw;
+        top: 50vh;
+    }
+    /* עיגולים */
+    #btd6 {
+        left: 53.5vw;
+        top: 47.5%;
+    }
+    /* מצלמה */
+    #btd5 {
+        left: 43vw;
+        top: 52vh;
+    }
+}
