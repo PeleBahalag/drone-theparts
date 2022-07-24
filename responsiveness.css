@@ -39,6 +39,9 @@
         left: 49vw;
         top: 25vh;
     }
+    .custom-btn {
+        top: 84vh;
+    }
 }
 
 @media screen and (max-width: 1790px) {
@@ -133,6 +136,9 @@
         left: -14vw;
         top: -11vh;
     }
+    .custom-btn {
+        top: 80vh;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -160,6 +166,9 @@
     #btc2 {
         left: 13vw;
         top: -10vh;
+    }
+    .custom-btn {
+        top: 75vh;
     }
 }
 
@@ -189,6 +198,9 @@
     #btc7 {
         left: -18vw;
         top: -6vh;
+    }
+    .custom-btn {
+        top: 70vh;
     }
 }
 
@@ -346,6 +358,9 @@
         left: 12vw;
         top: -4vh;
     }
+    .custom-btn {
+        top: 65vh;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -408,6 +423,9 @@
         position: absolute;
         left: -8vw;
         top: -3vh;
+    }
+    .custom-btn {
+        top: 63vh;
     }
 }
 
@@ -515,6 +533,9 @@
         left: -21vw;
         top: -4vh;
     }
+    .custom-btn {
+        top: 58vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -569,6 +590,9 @@
         left: 11vw;
         top: -2vh;
     }
+    .custom-btn {
+        top: 55vh;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -617,5 +641,8 @@
         position: absolute;
         left: -2vw;
         top: -1vh;
+    }
+    .custom-btn {
+        top: 53vh;
     }
 }
