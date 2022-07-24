@@ -9,7 +9,11 @@ body {
     background-size: 100vw 200vh;
 }
 
-* {
+#page1 {
+    overflow: hidden;
+}
+
+#page2 {
     overflow: hidden;
 }
 
