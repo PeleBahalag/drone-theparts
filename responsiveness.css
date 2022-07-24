@@ -39,52 +39,6 @@
         left: 49vw;
         top: 25vh;
     }
-    /* page 2 buttons */
-    /* אנטנות */
-    #btc1 {
-        left: 6vw;
-        top: -45vh;
-    }
-    /* כפתור הדלקה */
-    #btc2 {
-        left: 13vw;
-        top: -16vh;
-    }
-    /* גויסטיק */
-    #btc3 {
-        left: 12vw;
-        top: -10vh;
-    }
-    /* כפתור שחור */
-    #btc4 {
-        left: 5vw;
-        top: -6vh;
-    }
-    /* כפתור אדום */
-    #btc5 {
-        left: -9.5vw;
-        top: -6vh;
-    }
-    /* מסך */
-    #btc6 {
-        left: -10vw;
-        top: -17.5vh;
-    }
-    /* כפתור חזרה הביתה */
-    #btc6 {
-        left: -17vw;
-        top: -15vh;
-    }
-    /* צד */
-    #btc7 {
-        left: -19.5vw;
-        top: -12vh;
-    }
-    /* מחזיק טאבלט */
-    #btc8 {
-        left: -22vw;
-        top: 30vh;
-    }
 }
 
 @media screen and (max-width: 1790px) {
@@ -92,6 +46,21 @@
     #btd8 {
         left: 49vw;
         top: 26vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 8vw;
+        top: -39vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -12vh;
+    }
+    /* צד */
+    #btc7 {
+        left: -18vw;
+        top: -9vh;
     }
 }
 
@@ -110,6 +79,21 @@
     #btd7 {
         left: 49vw;
         top: 36vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 27vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -11vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 8vw;
+        top: -36vh;
     }
 }
 
@@ -134,6 +118,21 @@
         left: 49vw;
         top: 38vh;
     }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 23vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 8vw;
+        top: -32vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -11vh;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -152,6 +151,16 @@
         left: 77vw;
         top: 60vh;
     }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -10vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -10vh;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -164,6 +173,22 @@
     #btd5 {
         left: 46vw;
         top: 63vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 8vw;
+        top: -30vh;
+    }
+    /* כפתור שחור */
+    #btc4 {
+        position: absolute;
+        left: 4vw;
+        top: -4vh;
+    }
+    /* צד */
+    #btc7 {
+        left: -18vw;
+        top: -6vh;
     }
 }
 
@@ -198,6 +223,17 @@
         left: 21vw;
         top: 65vh;
     }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 20vh;
+    }
+    /* מסך */
+    #btc9 {
+        position: absolute;
+        left: 0vw;
+        top: 0vh;
+    }
 }
 
 @media screen and (max-width: 1180px) {
@@ -225,6 +261,26 @@
     #btd7 {
         left: 49vw;
         top: 39vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 8vw;
+        top: -27vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -9vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -9vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 17vh;
     }
 }
 
@@ -269,6 +325,27 @@
         left: 49vw;
         top: 40vh;
     }
+    /* אנטנות */
+    #btc1 {
+        left: 8vw;
+        top: -24vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -8vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -8vh;
+    }
+    /* גויסטיק */
+    #btc3 {
+        position: absolute;
+        left: 12vw;
+        top: -4vh;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -282,6 +359,26 @@
         left: 67vw;
         top: 52vh;
     }
+    /* אנטנות */
+    #btc1 {
+        left: 7vw;
+        top: -21vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 14vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -7vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -7vh;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -289,6 +386,28 @@
     #btd8 {
         left: 49vw;
         top: 36vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 7vw;
+        top: -19vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 12vh;
+    }
+    /* כפתור שחור */
+    #btc4 {
+        position: absolute;
+        left: 5vw;
+        top: -3vh;
+    }
+    /* כפתור אדום */
+    #btc5 {
+        position: absolute;
+        left: -8vw;
+        top: -3vh;
     }
 }
 
@@ -323,6 +442,31 @@
         left: 49vw;
         top: 42vh;
     }
+    /* אנטנות */
+    #btc1 {
+        left: 7vw;
+        top: -17vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 10vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -14vw;
+        top: -6vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 13vw;
+        top: -6vh;
+    }
+    /* צד */
+    #btc7 {
+        left: -20vw;
+        top: -5vh;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -355,6 +499,21 @@
     #btd6 {
         left: 54.5vw;
         top: 49%;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 7vw;
+        top: -15vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -20vw;
+        top: 8vh;
+    }
+    /* צד */
+    #btc7 {
+        left: -21vw;
+        top: -4vh;
     }
 }
 
@@ -389,6 +548,27 @@
         left: 45vw;
         top: 53vh;
     }
+    /* אנטנות */
+    #btc1 {
+        left: 6vw;
+        top: -14vh;
+    }
+    /* כפתור חזרה הביתה */
+    #btc6 {
+        left: -15vw;
+        top: -5.5vh;
+    }
+    /* כפתור הדלקה */
+    #btc2 {
+        left: 12vw;
+        top: -5.5vh;
+    }
+    /* גויסטיק */
+    #btc3 {
+        position: absolute;
+        left: 11vw;
+        top: -2vh;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -421,5 +601,21 @@
     #btd5 {
         left: 43vw;
         top: 52vh;
+    }
+    /* אנטנות */
+    #btc1 {
+        left: 6vw;
+        top: -11vh;
+    }
+    /* מחזיק טאבלט */
+    #btc8 {
+        left: -21vw;
+        top: 5vh;
+    }
+    /* מסך */
+    #btc9 {
+        position: absolute;
+        left: -2vw;
+        top: -1vh;
     }
 }
