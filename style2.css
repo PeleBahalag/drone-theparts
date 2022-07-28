@@ -7,14 +7,31 @@
 #page2 {
     position: absolute;
     left: 50vw;
+    display: block;
+}
+
+#page3 {
+    position: absolute;
+    top: 55vh;
+    left: 50vw;
+    display: none;
+}
+
+#page4 {
+    position: absolute;
+    top: 50vh;
+    width: 100vw;
+    display: none;
 }
 
 .page2-hidden {
     top: 255vh;
+    left: -100vw;
 }
 
 .page2-shown {
     top: 55vh;
+    left: 50vw;
 }
 
 .page1-hidden {
@@ -30,6 +47,13 @@
     width: 45vw;
     left: 50%;
     top: 52.5%;
+    transform: translate(-50%, -50%);
+}
+
+#side {
+    position: absolute;
+    width: 45vw;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 

@@ -41,8 +41,8 @@ let data = {
         "paragraph2": ""
     },
     "d7": {
-        "title": "תוספות אפשריות",
-        "subtitle": "",
+        "title": "כפתור הפעלה",
+        "subtitle": "הפעלה וכיבוי של הרחפן",
         "paragraph": "",
         "paragraph2": ""
     },
@@ -97,7 +97,7 @@ let data = {
     "c8": {
         "title": "מחזיק טאבלט",
         "subtitle": "",
-        "paragraph": "",
+        "paragraph": "הטאבלט ייתפס ויוחזק על ידי חלק זה.",
         "paragraph2": ""
     },
     "c9": {
@@ -110,22 +110,20 @@ let data = {
     "controller-btn-count": 9
 };
 
-document.getElementById("page1").addEventListener("scroll", function() {
-    window.scrollTo(0, 0)
-}, false)
 
-// window.addEventListener("touchstart", function(event) {
-//     if (event.target.tagName == "HTML" || event.target.tagName == "BODY") {
-//         event.preventDefault();
-//     }
-// }, false);
+
 
 window.addEventListener("load", () => {
     toControllerBtn = document.getElementById("next");
     toDrownBtn = document.getElementById("prev");
     page1 = document.getElementById("page1");
     page2 = document.getElementById("page2");
+    page3 = document.getElementById("page3");
 
+
+    document.getElementById("page1").addEventListener("scroll", function() {
+        window.scrollTo(0, 0)
+    }, false)
 
     document.getElementById("btd1").addEventListener("click", function() {
         showCard('d1')
@@ -151,6 +149,10 @@ window.addEventListener("load", () => {
     document.getElementById("btd8").addEventListener("click", function() {
         showCard('d8')
     });
+    // drown top and under
+    document.getElementById("btd9").addEventListener("click", toUnder);
+    document.getElementById("btu1").addEventListener("click", toTop);
+    // 
     document.getElementById("btc1").addEventListener("click", function() {
         showCard('c1')
     });
@@ -169,9 +171,10 @@ window.addEventListener("load", () => {
     document.getElementById("btc6").addEventListener("click", function() {
         showCard('c6')
     });
-    document.getElementById("btc7").addEventListener("click", function() {
-        showCard('c7')
-    });
+    // controller side and back
+    document.getElementById("btc7").addEventListener("click", toSide);
+    document.getElementById("bts1").addEventListener("click", toFront);
+    // 
     document.getElementById("btc8").addEventListener("click", function() {
         showCard('c8')
     });
@@ -240,4 +243,26 @@ const showCard = (btnNum) => {
 const hideCard = () => {
     document.getElementById("info-page1").style.display = 'none';
     document.getElementById("info-page1").classList.remove("showCard");
+}
+
+const toSide = () => {
+    page2.style.display = 'none';
+    page3.style.display = 'block';
+}
+
+const toFront = () => {
+    page2.classList.remove("animsecond-playrev");
+    page2.classList.remove("animsecond-play");
+    page3.style.display = 'none';
+    page2.style.display = 'block';
+}
+
+const toUnder = () => {
+    page1.style.display = 'none';
+    page4.style.display = 'block';
+}
+
+const toTop = () => {
+    page4.style.display = 'none';
+    page1.style.display = 'block';
 }
