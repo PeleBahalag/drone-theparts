@@ -313,6 +313,17 @@ p {
     top: -8vh;
 }
 
+/* under - page 4 buttons */
+
+
+/* חזור */
+
+#btu1 {
+    position: absolute;
+    left: 49.5vw;
+    top: -40vh;
+}
+
 
 /* btn */
 

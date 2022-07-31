@@ -111,7 +111,16 @@ let data = {
 };
 
 
+const scrollReaction = () =>{
+    console.log(event.deltaY)
+    if (event.deltaY < 0) {
+        moveToDrown();
+    } else {
+        moveToController();
+    }
+}
 
+window.addEventListener("wheel", scrollReaction);
 
 window.addEventListener("load", () => {
     toControllerBtn = document.getElementById("next");
@@ -189,14 +198,7 @@ window.addEventListener("load", () => {
 
 });
 
-window.addEventListener("wheel", (event) => {
-    console.log(event.deltaY)
-    if (event.deltaY < 0) {
-        moveToDrown();
-    } else {
-        moveToController();
-    }
-});
+
 
 
 const moveToController = () => {
@@ -248,6 +250,7 @@ const hideCard = () => {
 const toSide = () => {
     page2.style.display = 'none';
     page3.style.display = 'block';
+    window.removeEventListener("wheel", scrollReaction);
 }
 
 const toFront = () => {
@@ -255,14 +258,19 @@ const toFront = () => {
     page2.classList.remove("animsecond-play");
     page3.style.display = 'none';
     page2.style.display = 'block';
+    window.addEventListener("wheel", scrollReaction);
 }
 
 const toUnder = () => {
     page1.style.display = 'none';
     page4.style.display = 'block';
+    window.removeEventListener("wheel", scrollReaction);
 }
 
 const toTop = () => {
     page4.style.display = 'none';
     page1.style.display = 'block';
+    page1.classList.remove("animfirst-playrev");
+    page1.classList.remove("animfirst-play");
+    window.addEventListener("wheel", scrollReaction);
 }
