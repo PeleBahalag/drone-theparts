@@ -313,6 +313,7 @@ p {
     top: -8vh;
 }
 
+
 /* under - page 4 buttons */
 
 
@@ -322,6 +323,24 @@ p {
     position: absolute;
     left: 49.5vw;
     top: -40vh;
+}
+
+
+/* Led */
+
+#btu2 {
+    position: absolute;
+    left: 49.5vw;
+    top: -11vh;
+}
+
+
+/* חיישנים אולטרסונים */
+
+#btu3 {
+    position: absolute;
+    left: 49.5vw;
+    top: -1vh;
 }
 
 

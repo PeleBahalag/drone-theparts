@@ -106,12 +106,24 @@ let data = {
         "paragraph": "",
         "paragraph2": ""
     },
+    "u2": {
+        "title": "נורות LED תחתונות",
+        "subtitle": "",
+        "paragraph": "",
+        "paragraph2": ""
+    },
+    "u3": {
+        "title": "חיישנים אולטרסונים",
+        "subtitle": "נותנים את גובה הרחפן המדוייק ביחס לקרקע מעליה נמצא.",
+        "paragraph": "(עד 13 מטרים.)",
+        "paragraph2": ""
+    },
     "drown-btn-count": 8,
     "controller-btn-count": 9
 };
 
 
-const scrollReaction = () =>{
+const scrollReaction = () => {
     console.log(event.deltaY)
     if (event.deltaY < 0) {
         moveToDrown();
@@ -189,6 +201,12 @@ window.addEventListener("load", () => {
     });
     document.getElementById("btc9").addEventListener("click", function() {
         showCard('c9')
+    });
+    document.getElementById("btu2").addEventListener("click", function() {
+        showCard('u2')
+    });
+    document.getElementById("btu3").addEventListener("click", function() {
+        showCard('u3')
     });
 
     document.getElementById("x").addEventListener("click", hideCard);
