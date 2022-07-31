@@ -314,6 +314,15 @@ p {
 }
 
 
+/* כפתורי צד */
+
+#bts2 {
+    position: absolute;
+    left: -10vw;
+    top: -13vh;
+}
+
+
 /* under - page 4 buttons */
 
 

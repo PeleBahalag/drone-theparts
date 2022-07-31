@@ -118,6 +118,12 @@ let data = {
         "paragraph": "(עד 13 מטרים.)",
         "paragraph2": ""
     },
+    "s2": {
+        "title": "החלפת מצבי טיסה:",
+        "subtitle": "P-Mode: המצב בו נטיס, הכלי מסתמך על קליטת לווינים בGPS בכדי לשמור על מקומו באוויר וכך לקבוע נקודת חזרה ממקום ההמראה. מהירות טיסה מקסימאלית- 50 קמש.",
+        "paragraph": " T-Mode: מוגבל במהירות הטיסה ובמהירות העלייה והירידה. מיועד בעיקר לצילום.",
+        "paragraph2": "S-Mode: מצב ספורט, מערכת מניעת התנגשויות איננה פועלת. הרחפן נעזר בGPS ובמערכת החישה. מהירות מקסימאלית: 65 קמש. מיועד להגעה מהירה יותר ליעד, אך הסוללה תתפרק מהר יותר."
+    },
     "drown-btn-count": 8,
     "controller-btn-count": 9
 };
@@ -141,6 +147,8 @@ window.addEventListener("load", () => {
     page2 = document.getElementById("page2");
     page3 = document.getElementById("page3");
 
+    // Test
+    document.getElementById("test").addEventListener("click", toTest);
 
     document.getElementById("page1").addEventListener("scroll", function() {
         window.scrollTo(0, 0)
@@ -207,6 +215,9 @@ window.addEventListener("load", () => {
     });
     document.getElementById("btu3").addEventListener("click", function() {
         showCard('u3')
+    });
+    document.getElementById("bts2").addEventListener("click", function() {
+        showCard('s2')
     });
 
     document.getElementById("x").addEventListener("click", hideCard);
@@ -291,4 +302,8 @@ const toTop = () => {
     page1.classList.remove("animfirst-playrev");
     page1.classList.remove("animfirst-play");
     window.addEventListener("wheel", scrollReaction);
+}
+
+const toTest = () => {
+    window.location.href = ("./test.html");
 }
