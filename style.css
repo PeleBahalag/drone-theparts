@@ -140,7 +140,7 @@ p {
 /* מנועים */
 
 #btd1 {
-    position: absolute;
+    position: relative;
     left: 19vw;
     top: 54vh;
 }
@@ -149,7 +149,7 @@ p {
 /* פרופלור */
 
 #btd2 {
-    position: absolute;
+    position: relative;
     left: 67vw;
     top: 55vh;
 }
@@ -158,7 +158,7 @@ p {
 /* led */
 
 #btd3 {
-    position: absolute;
+    position: relative;
     left: 78vw;
     top: 62vh;
 }
@@ -167,7 +167,7 @@ p {
 /* חיישנים */
 
 #btd4 {
-    position: absolute;
+    position: relative;
     left: 21vw;
     top: 72vh;
 }
@@ -176,7 +176,7 @@ p {
 /* מצלמה */
 
 #btd5 {
-    position: absolute;
+    position: relative;
     left: 44vw;
     top: 64vh;
 }
@@ -185,7 +185,7 @@ p {
 /* עיגולים */
 
 #btd6 {
-    position: absolute;
+    position: relative;
     left: 54.5vw;
     top: 55%;
 }
@@ -194,7 +194,7 @@ p {
 /* עיגול למעלה */
 
 #btd7 {
-    position: absolute;
+    position: relative;
     left: 49vw;
     top: 35vh;
 }
@@ -203,7 +203,7 @@ p {
 /* למעלה */
 
 #btd8 {
-    position: absolute;
+    position: relative;
     left: 49vw;
     top: 23vh;
 }
@@ -212,7 +212,7 @@ p {
 /* רחפן למטה */
 
 #btd9 {
-    position: absolute;
+    position: relative;
     left: 49vw;
     top: 77vh;
 }
