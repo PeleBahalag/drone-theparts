@@ -1,4 +1,8 @@
 @media (orientation: portrait) {
+    #page1,
+    #page2 {
+        overflow-y: hidden;
+    }
     #logo-sayarim:hover+#credits,
     #credits:hover {
         left: 18vw;

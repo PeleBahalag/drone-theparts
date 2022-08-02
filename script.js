@@ -156,8 +156,6 @@ window.addEventListener("load", () => {
     if (window.innerHeight > window.innerWidth) {
         // alert("Please use Landscape!");
         addListeners(false);
-        disable_scroll_mobile();
-
     }
     // Landscape
     else {
@@ -253,6 +251,9 @@ const addListeners = (landscape) => {
 
 
 const moveToController = () => {
+    page1.style.overFlow = 'scroll';
+    page2.style.overFlow = 'scroll';
+
     page2.classList.remove("animsecond-playrev");
     page1.classList.remove("animfirst-playrev");
 
@@ -267,6 +268,9 @@ const moveToController = () => {
 }
 
 const moveToDrown = () => {
+    page1.style.overFlow = 'scroll';
+    page2.style.overFlow = 'scroll';
+
     page2.classList.remove("animsecond-play");
     page1.classList.remove("animfirst-play");
 
