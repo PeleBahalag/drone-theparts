@@ -1,4 +1,29 @@
 @media (orientation: portrait) {
+    #info-page1 {
+        left: 10vw;
+        top: 10vh;
+        margin: 1vw;
+        width: 80vw;
+        height: 40vw;
+    }
+    #info-page1-ttl {
+        font-size: 2.5vh;
+    }
+    #info-page1-subttl {
+        font-size: 1.7vh;
+        padding: 0 2vh 0 2vh;
+        line-height: 1.7vh;
+    }
+    #info-page1-para {
+        font-size: 1.4vh;
+        padding: 0 2vh .5vh 2vh;
+        line-height: 1.6vh;
+    }
+    #info-page1-para2 {
+        font-size: 1.4vh;
+        padding: 0 2vh 0 2vh;
+        line-height: 1.6vh;
+    }
     @media (max-aspect-ratio: 11/12) {
         /* למעלה */
         #btd8 {
