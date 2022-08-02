@@ -6,15 +6,15 @@ let scrollval = 0;
 let data = {
     "d1": {
         "title": "מנועים",
-        "subtitle": "מורכבים מתחת לפרופלורים",
-        "paragraph": "תפקידם להמיר את אנרגיית החשמל לעבודה מכאנית.",
+        "subtitle": "תפקידם להמיר את אנרגיית החשמל לעבודה מכאנית.",
+        "paragraph": "ככל שהם עובדים יותר (מזיזים את הרחפן יותר, יש הרבה רוח) הסוללה נגמרת מהר יותר.",
         "paragraph2": ""
     },
     "d2": {
         "title": "פרופלורים",
         "subtitle": "",
         "paragraph": "לפרופלורים חיבור של לבן ושחור. כל זוג פרופלורים מנוגדים (כלומר זוג אחד מסתובב לכיוון מסויים והזוג השני לכיוון השני) כדי ליצור שיווי משקל ברחפן. ניתן לראות על הפרופלור צבע שחור או צבע לבן ועל המנוע המתאים לו גם צבע לבן או שחור.",
-        "paragraph2": ""
+        "paragraph2": "נבדוק שהם מחוברים היטב ואין שברים."
     },
     "d3": {
         "title": "תאורות LED",
@@ -49,8 +49,8 @@ let data = {
     "d8": {
         "title": "סוללה",
         "subtitle": "",
-        "paragraph": "זמן ההטענה משתנה מרחפן לרחפן.",
-        "paragraph2": "בMavic2 זמן ההטענה לסוללה אחת הוא שעה ועשרים דקות."
+        "paragraph": "בMavic2 זמן ההטענה לסוללה אחת הוא שעה ועשרים דקות.",
+        "paragraph2": "נוודא כי הסוללה מלאה ואינה נפוחה/סדוקה או שבורה."
     },
     "c1": {
         "title": "אנטנות",
@@ -65,20 +65,20 @@ let data = {
         "paragraph2": "לחיצה קצרה + לחיצה ארוכה מיד אחריה מפעילה את השלט."
     },
     "c3": {
-        "title": "מוטות / סטיקים שליטה",
+        "title": "סטיקים שליטה",
         "subtitle": "שולטים ברחפן",
         "paragraph": "סטיק ימני- קדימה,אחורה,ימינה,שמאלה.",
         "paragraph2": "סטיק שמאלי- למעלה, למטה, סיבוב 360 מעלות לשני הכיוונים."
     },
     "c4": {
-        "title": "כפתור שחור",
-        "subtitle": "",
+        "title": "כפתור 5D",
+        "subtitle": "כפתור קיצורי דרך למטיס.",
         "paragraph": "",
         "paragraph2": ""
     },
     "c5": {
-        "title": "כפתור אדום",
-        "subtitle": "",
+        "title": "כפתור הפסקת טיסה",
+        "subtitle": "(לא בשימוש.)",
         "paragraph": "",
         "paragraph2": ""
     },
@@ -86,7 +86,7 @@ let data = {
         "title": "לחצן חזרה הביתה",
         "subtitle": "RTH (Return To Home)",
         "paragraph": "כאשר לוחצים על לחצן זה הרחפן חוזר הביתה (אל המקום אשר הגדרנו לו כבית).",
-        "paragraph2": ""
+        "paragraph2": "כאשר הסוללה מגיעה ל 20% תופיע הודעה באפליקציה הממליצה לחזור הביתה. כאשר האות מהשלט לרחפן עובד ליותר מ 3 שניות הרחפן אוטומטית חוזר הביתה. באפליקציה ישנה אפשרות לבחור את הגובה שהרחפן יגיע אליו בעת חזרה הביתה. כאשר הרחפן יגיע ל10% הוא ינחת במקום בונמצא. (מצב סוללה קריטית)"
     },
     "c7": {
         "title": "צד",
@@ -100,19 +100,13 @@ let data = {
         "paragraph": "הטאבלט ייתפס ויוחזק על ידי חלק זה.",
         "paragraph2": ""
     },
-    "c9": {
-        "title": "מסך",
-        "subtitle": "",
-        "paragraph": "",
+    "u3": {
+        "title": "מערכת אופטי וויז'יון VPS",
+        "subtitle": "שתי מצלמות (שלא נועדו  לצילום), הנמצאות בתחתית הרחפן",
+        "paragraph": '"מצלמות" בתמונת זיכרון לרחפן את האזור ממנו המריא, וכאשר יגיע לנחיתה הנחיתה תהיה יותר מדויקת ומהירה.',
         "paragraph2": ""
     },
     "u2": {
-        "title": "נורות LED תחתונות",
-        "subtitle": "",
-        "paragraph": "",
-        "paragraph2": ""
-    },
-    "u3": {
         "title": "חיישנים אולטרסונים",
         "subtitle": "נותנים את גובה הרחפן המדוייק ביחס לקרקע מעליה נמצא.",
         "paragraph": "(עד 13 מטרים.)",
@@ -123,6 +117,18 @@ let data = {
         "subtitle": "P-Mode: המצב בו נטיס, הכלי מסתמך על קליטת לווינים בGPS בכדי לשמור על מקומו באוויר וכך לקבוע נקודת חזרה ממקום ההמראה. מהירות טיסה מקסימאלית- 50 קמש.",
         "paragraph": " T-Mode: מוגבל במהירות הטיסה ובמהירות העלייה והירידה. מיועד בעיקר לצילום.",
         "paragraph2": "S-Mode: מצב ספורט, מערכת מניעת התנגשויות איננה פועלת. הרחפן נעזר בGPS ובמערכת החישה. מהירות מקסימאלית: 65 קמש. מיועד להגעה מהירה יותר ליעד, אך הסוללה תתפרק מהר יותר."
+    },
+    "s3": {
+        "title": "כפתורי C1 ו-C2",
+        "subtitle": "2 כפתורי קיצור דרך למטיס",
+        "paragraph": "נמצאים בגב הרחפן.",
+        "paragraph2": ""
+    },
+    "s4": {
+        "title": "גלגלת ימנית וגלגלת שמאלית",
+        "subtitle": "",
+        "paragraph": "גלגלת ימנית- חוגת בהירות המצלמה. ניתן לשנות את רמה החשיפה לאור.",
+        "paragraph2": "גלגלת שמאלית- חוגת גימבל- אחראית על העלאת והורדת המצלמה."
     },
     "drown-btn-count": 8,
     "controller-btn-count": 9
@@ -226,9 +232,6 @@ const addListeners = (landscape) => {
     document.getElementById("btc8").addEventListener("click", function() {
         showCard('c8')
     });
-    document.getElementById("btc9").addEventListener("click", function() {
-        showCard('c9')
-    });
     document.getElementById("btu2").addEventListener("click", function() {
         showCard('u2')
     });
@@ -237,6 +240,12 @@ const addListeners = (landscape) => {
     });
     document.getElementById("bts2").addEventListener("click", function() {
         showCard('s2')
+    });
+    document.getElementById("bts3").addEventListener("click", function() {
+        showCard('s3')
+    });
+    document.getElementById("bts4").addEventListener("click", function() {
+        showCard('s4')
     });
 
     document.getElementById("x").addEventListener("click", hideCard);

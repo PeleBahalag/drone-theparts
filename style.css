@@ -269,15 +269,6 @@ p {
 }
 
 
-/* מסך */
-
-#btc9 {
-    position: absolute;
-    left: 0vw;
-    top: 1vh;
-}
-
-
 /* כפתור חזרה הביתה */
 
 #btc6 {
@@ -323,6 +314,24 @@ p {
     position: absolute;
     left: -10vw;
     top: -13vh;
+}
+
+
+/* כפתורי c1,c2 */
+
+#bts3 {
+    position: absolute;
+    left: 0vw;
+    top: -15vh;
+}
+
+
+/* גלגלות */
+
+#bts4 {
+    position: absolute;
+    left: -5vw;
+    top: -28vh;
 }
 
 

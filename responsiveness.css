@@ -77,6 +77,30 @@
         left: 49vw;
         top: 76vh;
     }
+    /* חזור */
+    #bts1 {
+        position: absolute;
+        left: 18vw;
+        top: -8vh;
+    }
+    /* כפתורי צד */
+    #bts2 {
+        position: absolute;
+        left: -10vw;
+        top: -13vh;
+    }
+    /* כפתורי c1,c2 */
+    #bts3 {
+        position: absolute;
+        left: 0vw;
+        top: -15vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -25vh;
+    }
 }
 
 @media screen and (max-width: 1650px) {
@@ -127,6 +151,30 @@
         position: absolute;
         left: 49vw;
         top: -0vh;
+    }
+    /* חזור */
+    #bts1 {
+        position: absolute;
+        left: 17vw;
+        top: -8vh;
+    }
+    /* כפתורי צד */
+    #bts2 {
+        position: absolute;
+        left: -10vw;
+        top: -13vh;
+    }
+    /* כפתורי c1,c2 */
+    #bts3 {
+        position: absolute;
+        left: 0vw;
+        top: -14vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -23vh;
     }
 }
 
@@ -190,6 +238,30 @@
         left: 49vw;
         top: -.5vh;
     }
+    /* חזור */
+    #bts1 {
+        position: absolute;
+        left: 17vw;
+        top: -8vh;
+    }
+    /* כפתורי צד */
+    #bts2 {
+        position: absolute;
+        left: -10vw;
+        top: -12vh;
+    }
+    /* כפתורי c1,c2 */
+    #bts3 {
+        position: absolute;
+        left: 0vw;
+        top: -13vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -21vh;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -230,6 +302,24 @@
     #next {
         top: 75vh;
     }
+    /* כפתורי צד */
+    #bts2 {
+        position: absolute;
+        left: -10vw;
+        top: -11vh;
+    }
+    /* כפתורי c1,c2 */
+    #bts3 {
+        position: absolute;
+        left: 0vw;
+        top: -12vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -20vh;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -264,6 +354,24 @@
         position: absolute;
         left: 48vw;
         top: 67vh;
+    }
+    /* כפתורי צד */
+    #bts2 {
+        position: absolute;
+        left: -10vw;
+        top: -10vh;
+    }
+    /* כפתורי c1,c2 */
+    #bts3 {
+        position: absolute;
+        left: 0vw;
+        top: -11vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -19vh;
     }
 }
 
@@ -302,12 +410,6 @@
     #btc8 {
         left: -20vw;
         top: 20vh;
-    }
-    /* מסך */
-    #btc9 {
-        position: absolute;
-        left: 0vw;
-        top: 0vh;
     }
 }
 
@@ -362,6 +464,24 @@
         position: absolute;
         left: 48vw;
         top: 65vh;
+    }
+    /* כפתורי צד */
+    #bts2 {
+        position: absolute;
+        left: -10vw;
+        top: -9vh;
+    }
+    /* כפתורי c1,c2 */
+    #bts3 {
+        position: absolute;
+        left: 0vw;
+        top: -10vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -17vh;
     }
 }
 
@@ -456,6 +576,12 @@
         position: absolute;
         left: 48vw;
         top: -17vh;
+    }
+    /* גלגלות */
+    #bts4 {
+        position: absolute;
+        left: -5vw;
+        top: -16vh;
     }
 }
 
@@ -788,11 +914,5 @@
     #btc8 {
         left: -21vw;
         top: 5vh;
-    }
-    /* מסך */
-    #btc9 {
-        position: absolute;
-        left: -2vw;
-        top: -1vh;
     }
 }
