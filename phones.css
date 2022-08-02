@@ -1,9 +1,4 @@
 @media (orientation: portrait) {
-    /*  */
-    #page1,
-    #page2 {
-        overflow: hidden;
-    }
     #logo-sayarim:hover+#credits,
     #credits:hover {
         left: 18vw;
@@ -38,7 +33,7 @@
     }
     #info-page1 {
         left: 10vw;
-        top: 10vh;
+        top: 13vh;
         margin: 1vw;
         width: 80vw;
         height: 40vw;

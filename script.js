@@ -138,6 +138,12 @@ const scrollReaction = () => {
     }
 }
 
+document.body.addEventListener('touchstart', function(e) {
+    if (e.target.nodeName === 'INPUT') {
+        this.style.pointerEvents = 'none';
+    }
+});
+
 
 
 window.addEventListener("load", () => {
