@@ -1,4 +1,7 @@
 @media (orientation: portrait) {
+    * {
+        overflow: hidden;
+    }
     #logo-sayarim:hover+#credits,
     #credits:hover {
         left: 13vw;
