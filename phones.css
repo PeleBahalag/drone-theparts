@@ -4,7 +4,7 @@
         margin-top: 7%;
     }
     .custom-btn {
-        top: 85vh;
+        top: 75vh;
     }
     #side {
         position: absolute;
@@ -71,7 +71,7 @@
     }
     #next {
         font-size: 1.5vh;
-        top: 70vh;
+        top: 60vh;
     }
     #prev {
         font-size: 1.5vh;
@@ -123,6 +123,12 @@
             position: absolute;
             left: -2vw;
             top: -1vh;
+        }
+        /* רחפן למטה */
+        #btd9 {
+            position: absolute;
+            left: 48vw;
+            top: 57vh;
         }
     }
     @media (max-aspect-ratio: 10/12) {
@@ -233,6 +239,12 @@
         #btd7 {
             left: 49vw;
             top: 43vh;
+        }
+        /* רחפן למטה */
+        #btd9 {
+            position: absolute;
+            left: 48vw;
+            top: 55vh;
         }
     }
     @media (max-aspect-ratio: 7/12) {
