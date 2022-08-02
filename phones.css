@@ -5,7 +5,7 @@
         overflow: hidden;
     }
     #page1 {
-        height: 90vh;
+        height: 95vh;
     }
     #logo-sayarim:hover+#credits,
     #credits:hover {
