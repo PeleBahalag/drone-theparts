@@ -27,19 +27,23 @@
 .page2-hidden {
     top: 255vh;
     left: -100vw;
+    opacity: 0;
 }
 
 .page2-shown {
     top: 55vh;
     left: 50vw;
+    opacity: 1;
 }
 
 .page1-hidden {
     top: -200vh;
+    opacity: 0;
 }
 
 .page1-shown {
     top: 0;
+    opacity: 1;
 }
 
 #controller {
