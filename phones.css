@@ -1,4 +1,7 @@
 @media (orientation: portrait) {
+    .custom-btn {
+        top: 85vh;
+    }
     #side {
         position: absolute;
         width: 70vw;
@@ -61,6 +64,14 @@
         font-size: 1.4vh;
         padding: 0 2vh 0 2vh;
         line-height: 1.6vh;
+    }
+    #next {
+        font-size: 1.5vh;
+        top: 70vh;
+    }
+    #prev {
+        font-size: 1.5vh;
+        top: -55vh;
     }
     @media (max-aspect-ratio: 11/12) {
         /* למעלה */
