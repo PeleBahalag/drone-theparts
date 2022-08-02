@@ -389,9 +389,9 @@ p {
 #next {
     font-size: 1vw;
     position: absolute;
-    width: 10vw;
+    width: 30vw;
     height: 14vh;
-    left: 45vw;
+    left: 35vw;
     top: 83vh;
     font-family: Heebo;
     text-align: center;
