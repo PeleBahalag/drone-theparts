@@ -138,7 +138,7 @@ const scrollReaction = () => {
     }
 }
 
-window.addEventListener("wheel", scrollReaction);
+
 
 window.addEventListener("load", () => {
     toControllerBtn = document.getElementById("next");
@@ -147,6 +147,21 @@ window.addEventListener("load", () => {
     page2 = document.getElementById("page2");
     page3 = document.getElementById("page3");
 
+
+    // Portrait
+    if (window.innerHeight > window.innerWidth) {
+        alert("Please use Landscape!");
+        addListeners(false);
+    }
+    // Landscape
+    else {
+        addListeners(true);
+    }
+
+});
+
+// Add all the listeners to the buttons
+const addListeners = (landscape) => {
     // Test
     document.getElementById("test").addEventListener("click", toTest);
 
@@ -221,12 +236,13 @@ window.addEventListener("load", () => {
     });
 
     document.getElementById("x").addEventListener("click", hideCard);
-
     toDrownBtn.addEventListener("click", moveToDrown);
     toControllerBtn.addEventListener("click", moveToController);
 
-});
-
+    if (landscape) {
+        window.addEventListener("wheel", scrollReaction);
+    }
+}
 
 
 
