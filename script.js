@@ -138,13 +138,11 @@ const scrollReaction = () => {
     }
 }
 
-document.body.addEventListener('touchstart', function(e) {
-    if (e.target.nodeName === 'INPUT') {
-        this.style.pointerEvents = 'none';
-    }
-});
 
 
+function disable_scroll_mobile() {
+    document.addEventListener('touchmove', preventDefault, false);
+}
 
 window.addEventListener("load", () => {
     toControllerBtn = document.getElementById("next");
@@ -158,6 +156,8 @@ window.addEventListener("load", () => {
     if (window.innerHeight > window.innerWidth) {
         // alert("Please use Landscape!");
         addListeners(false);
+        disable_scroll_mobile();
+
     }
     // Landscape
     else {
