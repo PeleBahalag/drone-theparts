@@ -260,11 +260,13 @@ const moveToController = () => {
     page2.classList.add("animsecond-play");
     page1.classList.add("animfirst-play");
 
+    page1.classList.add("page1-hidden");
+    page1.classList.remove("page1-shown");
+
     page2.classList.add("page2-shown");
     page2.classList.remove("page2-hidden");
 
-    page1.classList.add("page1-hidden");
-    page1.classList.remove("page1-shown");
+
 }
 
 const moveToDrown = () => {
@@ -278,10 +280,8 @@ const moveToDrown = () => {
     page2.classList.add("animsecond-playrev");
     page1.classList.add("animfirst-playrev");
 
-
-
-    page2.classList.remove("page2-shown");
     page2.classList.add("page2-hidden");
+    page2.classList.remove("page2-shown");
 
     page1.classList.remove("page1-hidden");
     page1.classList.add("page1-shown");

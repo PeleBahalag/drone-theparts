@@ -7,7 +7,6 @@
 #page2 {
     position: absolute;
     left: 50vw;
-    display: block;
 }
 
 #page3 {
@@ -27,23 +26,23 @@
 .page2-hidden {
     top: 255vh;
     left: -100vw;
-    opacity: 0;
+    display: none;
 }
 
 .page2-shown {
     top: 55vh;
     left: 50vw;
-    opacity: 1;
+    display: block;
 }
 
 .page1-hidden {
     top: -200vh;
-    opacity: 0;
+    display: none;
 }
 
 .page1-shown {
     top: 0;
-    opacity: 1;
+    display: block;
 }
 
 #controller {
