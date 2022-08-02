@@ -1,4 +1,8 @@
 @media (orientation: portrait) {
+    .custom-btn>span {
+        font-size: 2vh;
+        margin-top: 7%;
+    }
     .custom-btn {
         top: 85vh;
     }
