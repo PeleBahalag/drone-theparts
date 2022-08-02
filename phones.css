@@ -1,7 +1,9 @@
 @media (orientation: portrait) {
-    #page1,
-    #page2 {
-        overflow-y: hidden;
+    #side {
+        position: absolute;
+        width: 70vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #logo-sayarim:hover+#credits,
     #credits:hover {
