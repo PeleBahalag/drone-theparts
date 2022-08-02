@@ -1,6 +1,7 @@
 @media (orientation: portrait) {
     /*  */
-    * {
+    #page1,
+    #page2 {
         overflow: hidden;
     }
     #logo-sayarim:hover+#credits,
