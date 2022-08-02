@@ -150,7 +150,7 @@ window.addEventListener("load", () => {
 
     // Portrait
     if (window.innerHeight > window.innerWidth) {
-        alert("Please use Landscape!");
+        // alert("Please use Landscape!");
         addListeners(false);
     }
     // Landscape
