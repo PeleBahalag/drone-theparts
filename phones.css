@@ -4,16 +4,13 @@
     #page2 {
         overflow: hidden;
     }
-    #page1 {
-        height: 95vh;
-    }
     #logo-sayarim:hover+#credits,
     #credits:hover {
         left: 18vw;
     }
     #credits {
         padding-top: 1vh;
-        top: 2vh;
+        top: 3vh;
         font-size: 1.3vh;
         width: 60vw;
         height: 15vw;
