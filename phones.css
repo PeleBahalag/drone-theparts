@@ -1,4 +1,11 @@
     @media (orientation: portrait) {
+        #x {
+            margin: 1vh;
+            font-size: 2vh;
+        }
+        #x:hover {
+            font-size: 3vh;
+        }
         .custom-btn>span {
             font-size: 2vh;
             margin-top: 7%;
