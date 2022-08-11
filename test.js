@@ -114,13 +114,27 @@ const startTest = () => {
 
     // Set up the first question
     questionTitle.innerText = questions[currentQuestionNumber].q;
+    document.getElementById('ans1').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a1}`;
+    document.getElementById('ans2').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a2}`;
+    document.getElementById('ans3').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a3}`;
+    document.getElementById('ans4').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a4}`;
 
 
     // Set up the other questions
     currentQuestion = questionNumbers[0];
+    document.getElementById('ans1').addEventListener('click', chooseAnswer);
+    document.getElementById('ans2').addEventListener('click', chooseAnswer);
+    document.getElementById('ans3').addEventListener('click', chooseAnswer);
+    document.getElementById('ans4').addEventListener('click', chooseAnswer);
     for (let i = 0; i < questionNumbers.length; i++) {
         questionNumbers[i].addEventListener('click', () => {
             document.getElementById('questionCount').innerText = `${i+1}/${questionAmount}`;
+            // Load previous answer
+            // 
+            if (questions[currentQuestionNumber].chosen !== '') {
+                questions[currentQuestionNumber].chosen.classList.remove('chosen');
+                questions[currentQuestionNumber].chosen.children[0].innerHTML = `<span class="pick"> ▫ </span>`;
+            }
             currentQuestionNumber = i + 1;
             chooseQuestion(event);
         });
@@ -130,13 +144,32 @@ const startTest = () => {
 const chooseQuestion = (event) => {
     currentQuestion.classList.remove('current');
     event.currentTarget.classList.add('current');
+
     currentQuestion = event.currentTarget;
 
     // Change title and questions
-    console.log(currentQuestionNumber);
     questionTitle.innerText = questions[currentQuestionNumber].q;
     document.getElementById('ans1').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a1}`;
     document.getElementById('ans2').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a2}`;
     document.getElementById('ans3').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a3}`;
     document.getElementById('ans4').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a4}`;
+
+
+    // Load previous answer
+    if (questions[currentQuestionNumber].chosen !== '') {
+        questions[currentQuestionNumber].chosen.classList.add('chosen');
+        questions[currentQuestionNumber].chosen.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
+    }
+
+}
+
+const chooseAnswer = (event) => {
+    event.currentTarget.classList.add('chosen');
+    event.currentTarget.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
+    if (questions[currentQuestionNumber].chosen !== '') {
+        questions[currentQuestionNumber].chosen.classList.remove('chosen');
+        questions[currentQuestionNumber].chosen.children[0].innerHTML = `<span class="pick"> ▫ </span>`;
+    }
+    questions[currentQuestionNumber].chosen = event.currentTarget;
+    currentQuestion.classList.add('answered');
 }

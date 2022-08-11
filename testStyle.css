@@ -47,15 +47,15 @@
     position: relative;
     width: 9%;
     height: 100%;
-    background-color: rgba(235, 235, 235, 0.7);
+    background-color: rgba(188, 188, 188, 0.7);
 }
 
 .answered {
-    background-color: rgba(207, 207, 207, 0.7);
+    background-color: rgba(69, 69, 69, 0.7);
 }
 
 .current {
-    background-color: rgba(104, 104, 104, 0.7);
+    background-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 #answers {
@@ -79,5 +79,5 @@
 }
 
 .chosen {
-    color: rgba(104, 104, 104, 1);
+    color: rgb(195, 195, 195) !important;
 }
