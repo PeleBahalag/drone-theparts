@@ -343,4 +343,35 @@
             #credits:hover {
                 left: 20vw;
             }
+            #finished {
+                width: 80vw;
+                left: 10vw;
+                height: 30vh;
+                top: 30vh;
+            }
+            #confirm {
+                width: 80%;
+                left: 10%;
+                height: 80%;
+                top: 10%;
+            }
+            #inside {
+                padding: 10% 0 10% 0;
+                width: 80%;
+                left: 9%;
+                height: 50%;
+                top: 10%;
+            }
+            .fh1 {
+                font-size: 1.7vh;
+            }
+            .confirmationButton {
+                font-size: 1.6vh;
+                width: 24vw;
+                padding: .5vh .5vh;
+            }
+            #scoreH1 {
+                /* padding: ; */
+                font-size: 3vh;
+            }
         }
