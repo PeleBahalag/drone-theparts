@@ -177,6 +177,13 @@
             #questionCount {
                 font-size: 2.5vh;
             }
+            .btn-6>span {
+                font-size: 1.8vh;
+            }
+            #lomda {
+                width: 15vw;
+                left: 80vw;
+            }
         }
         
         @media screen and (max-width: 1200px) {
@@ -210,6 +217,10 @@
             #qList {
                 height: 10%;
             }
+            #lomda {
+                width: 20vw;
+                left: 75vw;
+            }
         }
         
         @media screen and (max-width: 800px) {
@@ -227,6 +238,10 @@
             }
             #qList {
                 height: 10%;
+            }
+            #lomda {
+                width: 26vw;
+                left: 68vw;
             }
         }
         
@@ -261,5 +276,9 @@
             #qnum,
             #questionCount {
                 font-size: 2vh;
+            }
+            #lomda {
+                width: 35vw;
+                left: 55vw;
             }
         }
