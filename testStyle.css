@@ -282,3 +282,35 @@
                 left: 55vw;
             }
         }
+        
+        @media (orientation: portrait) {
+            #questions {
+                font-size: 1.2vh;
+                height: 30vh;
+                top: 25vh;
+            }
+            #answers {
+                top: 4vh;
+            }
+            .answer,
+            .pick {
+                font-size: 1.5vh;
+            }
+            #qnum,
+            #questionCount {
+                font-size: 1.7vh;
+            }
+            #lomda {
+                width: 40vw;
+                left: 50vw;
+                height: 1vh;
+                padding: 1.4vh 0 3.2vh 0;
+            }
+            #send {
+                width: 40vw;
+                left: 2vw;
+                height: 1vh;
+                padding: 1.4vh 0 3.2vh 0;
+                top: 80vh;
+            }
+        }
