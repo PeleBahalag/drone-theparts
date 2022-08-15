@@ -98,6 +98,8 @@ let currentQuestion;
 let currentQuestionNumber = 1;
 let questionNumbers;
 let questionTitle;
+let countAnswered = 0
+let allAnswered = false;
 
 
 
@@ -109,6 +111,20 @@ window.addEventListener('load', () => {
 });
 
 const startTest = () => {
+    // Configure Send buttons
+    document.getElementById('send').addEventListener('click', sendTest);
+    document.getElementById('send2').addEventListener('click', () => {
+        document.getElementById('send').style.display = 'none';
+        document.getElementById('finished').style.display = 'block';
+        document.getElementById('inside').style.display = 'block';
+        document.getElementById('confirm').style.display = 'none';
+    });
+    document.getElementById('close').addEventListener('click', () => {
+        document.getElementById('send').style.display = 'block';
+        document.getElementById('finished').style.display = 'none';
+    });
+
+    // 
     questionTitle = document.getElementById('question');
     questionNumbers = document.getElementsByClassName('qc');
 
@@ -153,8 +169,6 @@ const chooseQuestion = (event) => {
     document.getElementById('ans2').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a2}`;
     document.getElementById('ans3').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a3}`;
     document.getElementById('ans4').innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a4}`;
-
-
     // Load previous answer
     if (questions[currentQuestionNumber].chosen !== '') {
         questions[currentQuestionNumber].chosen.classList.add('chosen');
@@ -169,7 +183,63 @@ const chooseAnswer = (event) => {
     if (questions[currentQuestionNumber].chosen !== '') {
         questions[currentQuestionNumber].chosen.classList.remove('chosen');
         questions[currentQuestionNumber].chosen.children[0].innerHTML = `<span class="pick"> ▫ </span>`;
+    } else {
+        countAnswered++;
+
+
     }
     questions[currentQuestionNumber].chosen = event.currentTarget;
     currentQuestion.classList.add('answered');
+    if (countAnswered === 10) {
+        allAnswered = true;
+        checkTest();
+    }
+}
+
+// Send test
+const sendTest = () => {
+    document.getElementById('send').style.display = 'none';
+    document.getElementById('finished').style.display = 'block';
+    // If not all the questions had been answered
+    if (!allAnswered) {
+        document.getElementById('confirm').style.display = 'block';
+        document.getElementById('inside').style.display = 'none';
+    } else {
+        document.getElementById('confirm').style.display = 'none';
+        document.getElementById('inside').style.display = 'block';
+    }
+
+}
+
+// Check test answers
+const checkTest = () => {
+    let score = 0;
+    for (let i = 0; i < 10; i++) {
+        let curr = i + 1;
+        if (questions[curr].chosen.getAttribute('answerNum') == questions[curr].correct) {
+            score = score + 10;
+        }
+        document.getElementById('scoreNum').innerText = score;
+        document.getElementById('scoreH1').classList.add('scorePos');
+        document.getElementById('scoreH1').classList.remove('scoreNeg');
+        // 70 and less
+        if (score < 80) {
+            document.getElementById('message').innerText = 'יפה, אך יש מקום לשיפור';
+            document.getElementById('scoreH1').classList.add('scorePos');
+            document.getElementById('scoreH1').classList.remove('scoreNeg');
+            // 50 and less
+            if (score < 60) {
+                document.getElementById('message').innerText = "חזור על החומר...";
+                document.getElementById('scoreH1').classList.add('scoreNeg');
+                document.getElementById('scoreH1').classList.remove('scorePos');
+                // 20 and less
+                if (score < 30) {
+                    document.getElementById('message').innerText = "סכנת התרסקות!";
+                    document.getElementById('scoreH1').classList.add('scoreNeg');
+                    document.getElementById('scoreH1').classList.remove('scorePos');
+                }
+            }
+        }
+
+    }
 }

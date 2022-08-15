@@ -31,10 +31,10 @@
         <h1 id="question">שאלה על אחד מחלקי הרחפן?</h1>
         <!-- answers -->
         <div id="answers">
-            <p class="answer" id="ans1"><span class="pick"> ▫ </span>תשובה 1</p>
-            <p class="answer" id="ans2"><span class="pick"> ▫ </span>תשובה 2</p>
-            <p class="answer" id="ans3"><span class="pick"> ▫ </span>תשובה 3</p>
-            <p class="answer" id="ans4"><span class="pick"> ▫ </span>תשובה 4</p>
+            <p class="answer" answerNum="a1" id="ans1"><span class="pick"> ▫ </span>תשובה 1</p>
+            <p class="answer" answerNum="a2" id="ans2"><span class="pick"> ▫ </span>תשובה 2</p>
+            <p class="answer" answerNum="a3" id="ans3"><span class="pick"> ▫ </span>תשובה 3</p>
+            <p class="answer" answerNum="a4" id="ans4"><span class="pick"> ▫ </span>תשובה 4</p>
         </div>
 
         <!-- question list -->
@@ -49,6 +49,24 @@
             <div class="qc">8</div>
             <div class="qc">9</div>
             <div class="qc">10</div>
+        </div>
+    </div>
+
+    <div id="finished">
+        <div id="inside">
+            <h1 class="fh1">סיימת את המבחן בציון של</h1>
+            <h1 id="scoreH1" class="fh1 scorePos"><span id="scoreNum">100</span>%</h1><br>
+            <h1 class="fh1"><span id="message">כל הכבוד!</span></h1><br>
+        </div>
+        <div id="confirm">
+            <h1 class="fh1">אופס!</h1>
+            <h1 class="fh1">ראיתי שלא עניתם על כל השאלות.</h1>
+            <h1 class="fh1">האם אתם בטוחים שתרצו להגיש את המבחן?</h1><br><br>
+            <div id="btnList">
+                <span class="confirmationButton" id="send2">כן, הגש!</span>
+                <span class="confirmationButton" id="close">לא, חזור למבחן</span>
+            </div>
+
         </div>
     </div>
 </body>

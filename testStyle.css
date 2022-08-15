@@ -81,3 +81,79 @@
 .chosen {
     color: rgb(195, 195, 195) !important;
 }
+
+#finished {
+    display: none;
+    position: absolute;
+    width: 65vw;
+    height: 70vh;
+    left: 17.5vw;
+    background-color: white;
+    border-radius: 30px;
+    top: 15vh;
+    z-index: 999999;
+    filter: drop-shadow(5px 10px 30px);
+}
+
+#inside {
+    display: none;
+    position: relative;
+    width: 55vw;
+    height: 50vh;
+    left: 4vw;
+    background-color: white;
+    border: 1vw rgb(170, 196, 223);
+    border-style: ridge;
+    border-radius: 30px;
+    top: 8vh;
+}
+
+.fh1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5vw;
+    direction: rtl;
+}
+
+.scorePos {
+    color: green;
+}
+
+.scoreNeg {
+    color: crimson;
+}
+
+#confirm {
+    display: none;
+    position: relative;
+    width: 55vw;
+    height: 50vh;
+    left: 5vw;
+    border-radius: 30px;
+    top: 10vh;
+}
+
+#btnList {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.confirmationButton {
+    cursor: pointer;
+    font-size: 2vw;
+    width: 17vw;
+    background-color: rgb(179, 201, 224);
+    text-align: center;
+    direction: rtl;
+    border-radius: 20px;
+    filter: drop-shadow(2px 3px 5px);
+    transition: all .1s ease;
+}
+
+.confirmationButton:active {
+    background-color: rgb(156, 181, 209);
+    filter: drop-shadow(2px 2px 2px);
+}
