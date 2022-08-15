@@ -302,6 +302,7 @@
             }
             #lomda {
                 width: 40vw;
+                top: 12vh;
                 left: 50vw;
                 height: 1vh;
                 padding: 1.4vh 0 3.2vh 0;
@@ -311,6 +312,35 @@
                 left: 2vw;
                 height: 1vh;
                 padding: 1.4vh 0 3.2vh 0;
-                top: 80vh;
+                top: 70vh;
+            }
+            #credits {
+                padding-top: 1vh;
+                top: 3vh;
+                font-size: 1.3vh;
+                width: 60vw;
+                height: 15vw;
+                border-radius: 10px;
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+                transition: all .2s ease;
+            }
+            #credits p {
+                margin: 1vh 2vh 1vh 1vh;
+            }
+            #logo-sayarim {
+                left: 0;
+                margin: 1vw;
+                top: 2vh;
+                width: 15vw;
+                cursor: pointer;
+            }
+            #pele {
+                left: 2vw;
+                top: 3vh;
+                width: 12vw;
+            }
+            #logo-sayarim:hover+#credits,
+            #credits:hover {
+                left: 20vw;
             }
         }
