@@ -9,6 +9,7 @@
     <link href="./testStyle.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="./test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -31,10 +32,10 @@
         <h1 id="question">שאלה על אחד מחלקי הרחפן?</h1>
         <!-- answers -->
         <div id="answers">
-            <p class="answer" answerNum="a1" id="ans1"><span class="pick"> ▫ </span>תשובה 1</p>
-            <p class="answer" answerNum="a2" id="ans2"><span class="pick"> ▫ </span>תשובה 2</p>
-            <p class="answer" answerNum="a3" id="ans3"><span class="pick"> ▫ </span>תשובה 3</p>
-            <p class="answer" answerNum="a4" id="ans4"><span class="pick"> ▫ </span>תשובה 4</p>
+            <p class="answer" data-ans="a1" id="ans1"><span class="pick"> ▫ </span>תשובה 1</p>
+            <p class="answer" data-ans="a2" id="ans2"><span class="pick"> ▫ </span>תשובה 2</p>
+            <p class="answer" data-ans="a3" id="ans3"><span class="pick"> ▫ </span>תשובה 3</p>
+            <p class="answer" data-ans="a4" id="ans4"><span class="pick"> ▫ </span>תשובה 4</p>
         </div>
 
         <!-- question list -->
@@ -54,9 +55,10 @@
 
     <div id="finished">
         <div id="inside">
+            <br><br>
             <h1 class="fh1">סיימת את המבחן בציון של</h1>
-            <h1 id="scoreH1" class="fh1 scorePos"><span id="scoreNum">100</span>%</h1><br>
-            <h1 class="fh1"><span id="message">כל הכבוד!</span></h1><br>
+            <h1 id="scoreH1" class="fh1 scorePos"><span id="scoreNum">100</span></h1>
+            <h1 class="fh1"><span id="message">כל הכבוד!</span></h1>
         </div>
         <div id="confirm">
             <h1 class="fh1">אופס!</h1>

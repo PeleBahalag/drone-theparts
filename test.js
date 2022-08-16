@@ -3,14 +3,15 @@ let questionAmount = 10;
 // Questions json data
 let questions = {
     "1": {
-        "q": 'מהי המהירות המקסימלית של הרחפן?',
-        "a1": '72',
-        "a2": '60',
-        "a3": '18',
-        "a4": '65',
+        "q": 'מה ההבדלים בין המצבים של נורת החיווי ברחפן?',
+        "a1": 'אדום- תקין, צהוב- סוללה נמוכה, ירוק- באוויר',
+        "a2": 'אדום- סוללה נמוכה, צהוב- תקלה, ירוק- באוויר',
+        "a3": 'אדום- נחיתה, צהוב- תקלה, ירוק- באוויר',
+        "a4": 'אדום-סוללה נמוכה, צהוב- תקלה, ירוק-באוויר',
         "correct": 'a4',
         "chosen": ''
     },
+
     "2": {
         "q": 'מהו תפקיד הברומטר?',
         "a1": 'מודד את המהירות הרוח',
@@ -39,11 +40,11 @@ let questions = {
         "chosen": ''
     },
     "5": {
-        "q": 'מה ההבדלים בין המצבים של נורת החיווי ברחפן?',
-        "a1": 'אדום- תקין, צהוב- סוללה נמוכה, ירוק- באוויר',
-        "a2": 'אדום- סוללה נמוכה, צהוב- תקלה, ירוק- באוויר',
-        "a3": 'אדום- נחיתה, צהוב- תקלה, ירוק- באוויר',
-        "a4": 'אדום-סוללה נמוכה, צהוב- תקלה, ירוק-באוויר',
+        "q": 'מהי המהירות המקסימלית של הרחפן?',
+        "a1": '72',
+        "a2": '60',
+        "a3": '18',
+        "a4": '65',
         "correct": 'a4',
         "chosen": ''
     },
@@ -118,6 +119,7 @@ const startTest = () => {
         document.getElementById('finished').style.display = 'block';
         document.getElementById('inside').style.display = 'block';
         document.getElementById('confirm').style.display = 'none';
+        checkTest();
     });
     document.getElementById('close').addEventListener('click', () => {
         document.getElementById('send').style.display = 'block';
@@ -216,8 +218,13 @@ const checkTest = () => {
     let score = 0;
     for (let i = 0; i < 10; i++) {
         let curr = i + 1;
-        if (questions[curr].chosen.getAttribute('answerNum') == questions[curr].correct) {
-            score = score + 10;
+        console.log(questions[curr].chosen)
+
+        if (questions[curr].chosen !== '') {
+
+            if (questions[curr].chosen.getAttribute('data-ans') == questions[curr].correct) {
+                score = score + 10;
+            }
         }
         document.getElementById('scoreNum').innerText = score;
         document.getElementById('scoreH1').classList.add('scorePos');
