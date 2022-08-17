@@ -221,6 +221,15 @@ p {
 }
 
 
+/* נורית חיווי מאחורה */
+
+#btd10 {
+    position: relative;
+    left: 46vw;
+    top: 23vh;
+}
+
+
 /* page 2 buttons */
 
 
@@ -365,12 +374,21 @@ p {
 }
 
 
+/* ברומטר */
+
+#btu4 {
+    position: absolute;
+    left: 47vw;
+    top: -7vh;
+}
+
+
 /* btn */
 
 .circle {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     z-index: 10;
 }

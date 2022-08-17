@@ -45,8 +45,8 @@
     /* חזור */
     #btu1 {
         position: absolute;
-        left: 49w;
-        top: -20vh;
+        left: 49.5vw;
+        top: -27vh;
     }
 }
 
@@ -100,6 +100,12 @@
         position: absolute;
         left: -5vw;
         top: -25vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        position: relative;
+        left: 46vw;
+        top: 25vh;
     }
 }
 
@@ -175,6 +181,12 @@
         position: absolute;
         left: -5vw;
         top: -23vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        position: relative;
+        left: 46vw;
+        top: 27vh;
     }
 }
 
@@ -320,6 +332,12 @@
         left: -5vw;
         top: -20vh;
     }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        position: relative;
+        left: 46vw;
+        top: 29vh;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -411,6 +429,12 @@
         left: -20vw;
         top: 20vh;
     }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        position: relative;
+        left: 46vw;
+        top: 30vh;
+    }
 }
 
 @media screen and (max-width: 1180px) {
@@ -482,6 +506,18 @@
         position: absolute;
         left: -5vw;
         top: -17vh;
+    }
+    /* ברומטר */
+    #btu4 {
+        position: absolute;
+        left: 47vw;
+        top: -6vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        position: relative;
+        left: 46vw;
+        top: 32vh;
     }
 }
 
@@ -579,9 +615,18 @@
     }
     /* גלגלות */
     #bts4 {
-        position: absolute;
         left: -5vw;
         top: -16vh;
+    }
+    /* ברומטר */
+    #btu4 {
+        left: 47vw;
+        top: -4vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        left: 46vw;
+        top: 33vh;
     }
 }
 
@@ -618,21 +663,23 @@
     }
     /* רחפן למטה */
     #btd9 {
-        position: absolute;
         left: 48vw;
         top: 63vh;
     }
     /* Led */
     #btu2 {
-        position: absolute;
         left: 49vw;
         top: -6vh;
     }
     /* חיישנים אולטרסונים */
     #btu3 {
-        position: absolute;
         left: 49vw;
         top: -.5vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        left: 46vw;
+        top: 34vh;
     }
 }
 
@@ -675,6 +722,11 @@
     }
     #next {
         top: 70vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        left: 44vw;
+        top: 34vh;
     }
 }
 
@@ -740,13 +792,18 @@
         left: 47vw;
         top: 60vh;
     }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        left: 44vw;
+        top: 36vh;
+    }
 }
 
 @media screen and (max-width: 680px) {
     /* למעלה */
     #btd8 {
         left: 49vw;
-        top: 38vh;
+        top: 39vh;
     }
     /* פרופלור */
     #btd2 {
@@ -798,19 +855,24 @@
     #btu1 {
         position: absolute;
         left: 47vw;
-        top: -10vh;
+        top: -15vh;
     }
     /* Led */
     #btu2 {
         position: absolute;
         left: 49vw;
-        top: -4vh;
+        top: -7vh;
     }
     /* חיישנים אולטרסונים */
     #btu3 {
         position: absolute;
         left: 49vw;
         top: -.5vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        left: 44vw;
+        top: 37vh;
     }
 }
 
@@ -871,6 +933,17 @@
         position: absolute;
         left: 47vw;
         top: 57vh;
+    }
+    /* Led */
+    #btu2 {
+        position: absolute;
+        left: 49vw;
+        top: -5vh;
+    }
+    /* נורית חיווי מאחורה */
+    #btd10 {
+        left: 44vw;
+        top: 38vh;
     }
 }
 

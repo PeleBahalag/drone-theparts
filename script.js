@@ -52,6 +52,12 @@ let data = {
         "paragraph": "בMavic2 זמן ההטענה לסוללה אחת הוא שעה ועשרים דקות.",
         "paragraph2": "נוודא כי הסוללה מלאה ואינה נפוחה/סדוקה או שבורה."
     },
+    "d10": {
+        "title": "נורית חיווי",
+        "subtitle": "נמצאת מאחורי הרחפן",
+        "paragraph": "נורית החיווי מוסרת את סטטוס הרחפן. היא מחולקת ל3 צבעים:",
+        "paragraph2": "אדום- סוללה נמוכה,  צהוב- תקלה,  ירוק- הכל תקין."
+    },
     "c1": {
         "title": "אנטנות",
         "subtitle": "קליטה ושידור בין השלט לרחפן.",
@@ -104,6 +110,12 @@ let data = {
         "title": "מערכת אופטי וויז'יון VPS",
         "subtitle": "שתי מצלמות (שלא נועדו  לצילום), הנמצאות בתחתית הרחפן",
         "paragraph": '"מצלמות" בתמונת זיכרון לרחפן את האזור ממנו המריא, וכאשר יגיע לנחיתה הנחיתה תהיה יותר מדויקת ומהירה.',
+        "paragraph2": ""
+    },
+    "u4": {
+        "title": "ברומטר",
+        "subtitle": "רכיב שנמצא בתוך הרחפן",
+        "paragraph": 'הברומטר מודד את הגובה מנקודת ההמראה של הרחפן.',
         "paragraph2": ""
     },
     "u2": {
@@ -203,6 +215,9 @@ const addListeners = (landscape) => {
     document.getElementById("btd8").addEventListener("click", function() {
         showCard('d8')
     });
+    document.getElementById("btd10").addEventListener("click", function() {
+        showCard('d10')
+    });
     // drown top and under
     document.getElementById("btd9").addEventListener("click", toUnder);
     document.getElementById("btu1").addEventListener("click", toTop);
@@ -237,6 +252,9 @@ const addListeners = (landscape) => {
     });
     document.getElementById("btu3").addEventListener("click", function() {
         showCard('u3')
+    });
+    document.getElementById("btu4").addEventListener("click", function() {
+        showCard('u4')
     });
     document.getElementById("bts2").addEventListener("click", function() {
         showCard('s2')

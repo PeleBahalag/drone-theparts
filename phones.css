@@ -156,6 +156,28 @@
                 left: 48vw;
                 top: 57vh;
             }
+            /* נורית חיווי מאחורה */
+            #btd10 {
+                left: 44vw;
+                top: 40vh;
+            }
+            /* ברומטר */
+            #btu4 {
+                left: 45vw;
+                top: -2.5vh;
+            }
+            /* Led */
+            #btu2 {
+                position: absolute;
+                left: 49vw;
+                top: -4vh;
+            }
+            /* חזור */
+            #btu1 {
+                position: absolute;
+                left: 49vw;
+                top: -13vh;
+            }
         }
         @media (max-aspect-ratio: 10/12) {
             /* למעלה */
