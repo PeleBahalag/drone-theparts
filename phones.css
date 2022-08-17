@@ -216,7 +216,7 @@
             #info-page1 {
                 left: 10vw;
                 width: 80vw;
-                height: 30vh;
+                height: 20vh;
             }
         }
         @media (max-aspect-ratio: 10/12) {
