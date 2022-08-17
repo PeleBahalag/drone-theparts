@@ -52,11 +52,11 @@
             height: 100vh;
         }
         #info-page1 {
-            left: 10vw;
+            left: 18vw;
             top: 13vh;
             margin: 1vw;
-            width: 80vw;
-            height: 45vw;
+            width: 64vw;
+            height: 30vh;
         }
         #info-page1-ttl {
             font-size: 2.5vh;
@@ -212,6 +212,11 @@
             #btc6 {
                 left: -15vw;
                 top: -4.5vh;
+            }
+            #info-page1 {
+                left: 10vw;
+                width: 80vw;
+                height: 30vh;
             }
         }
         @media (max-aspect-ratio: 10/12) {

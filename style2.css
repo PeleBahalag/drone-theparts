@@ -137,6 +137,7 @@
 /* Information Cards */
 
 #info-page1 {
+    overflow-y: auto;
     display: none;
     font-family: Heebo;
     position: fixed;
