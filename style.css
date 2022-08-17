@@ -15,6 +15,34 @@ body {
     background-size: 100vw 200vh;
 }
 
+#popup {
+    z-index: 9999999999999999;
+    top: -20vmin;
+    position: fixed;
+    width: 100vw;
+    height: 10vmin;
+    background-color: rgba(199, 230, 246, 0.6);
+    filter: drop-shadow(2px 3px 5px);
+    border-radius: 0 0 40px 40px;
+    font-size: 2.5vmin;
+    animation: showPopup 9s ease;
+}
+
+@keyframes showPopup {
+    0% {
+        top: -20vmin;
+    }
+    10% {
+        top: 0;
+    }
+    90% {
+        top: 0;
+    }
+    100% {
+        top: -20vmin;
+    }
+}
+
 #page1 {
     overflow: hidden;
 }
