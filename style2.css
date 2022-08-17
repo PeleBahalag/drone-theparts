@@ -159,8 +159,8 @@
     text-align: left;
     position: sticky;
     left: 0;
-    top: 0;
-    margin: 1vw;
+    top: 2.5vw;
+    /* margin: 1vw; */
     font-size: 1.5vw;
     cursor: pointer;
     transition: all 0.1s;
