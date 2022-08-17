@@ -157,10 +157,10 @@
 
 #x {
     text-align: left;
-    position: sticky;
-    left: 0;
-    top: 2.5vw;
-    /* margin: 1vw; */
+    position: fixed;
+    /* left: 2vw; */
+    /* top: 2.5vw; */
+    margin: 1vw;
     font-size: 1.5vw;
     cursor: pointer;
     transition: all 0.1s;
