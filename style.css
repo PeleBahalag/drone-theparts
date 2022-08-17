@@ -305,6 +305,15 @@ p {
 }
 
 
+/* GPS */
+
+#btc9 {
+    position: absolute;
+    left: -5vw;
+    top: -16vh;
+}
+
+
 /* side - page 3 buttons */
 
 

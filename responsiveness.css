@@ -107,6 +107,11 @@
         left: 46vw;
         top: 25vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -5vw;
+        top: -15.5vh;
+    }
 }
 
 @media screen and (max-width: 1650px) {
@@ -187,6 +192,11 @@
         position: relative;
         left: 46vw;
         top: 27vh;
+    }
+    /* GPS */
+    #btc9 {
+        left: -5vw;
+        top: -14.5vh;
     }
 }
 
@@ -274,6 +284,11 @@
         left: -5vw;
         top: -21vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -6vw;
+        top: -14vh;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -338,6 +353,11 @@
         left: 46vw;
         top: 29vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -6vw;
+        top: -13vh;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -390,6 +410,11 @@
         position: absolute;
         left: -5vw;
         top: -19vh;
+    }
+    /* GPS */
+    #btc9 {
+        left: -6vw;
+        top: -12.5vh;
     }
 }
 
@@ -519,6 +544,11 @@
         left: 46vw;
         top: 32vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -6vw;
+        top: -12vh;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -628,6 +658,11 @@
         left: 46vw;
         top: 33vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -6vw;
+        top: -11vh;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -681,6 +716,11 @@
         left: 46vw;
         top: 34vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -7vw;
+        top: -10.5vh;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -727,6 +767,11 @@
     #btd10 {
         left: 44vw;
         top: 34vh;
+    }
+    /* GPS */
+    #btc9 {
+        left: -7vw;
+        top: -10vh;
     }
 }
 
@@ -796,6 +841,11 @@
     #btd10 {
         left: 44vw;
         top: 36vh;
+    }
+    /* GPS */
+    #btc9 {
+        left: -8vw;
+        top: -9.5vh;
     }
 }
 
@@ -874,6 +924,11 @@
         left: 44vw;
         top: 37vh;
     }
+    /* GPS */
+    #btc9 {
+        left: -8vw;
+        top: -9vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -944,6 +999,11 @@
     #btd10 {
         left: 44vw;
         top: 38vh;
+    }
+    /* GPS */
+    #btc9 {
+        left: -8.5vw;
+        top: -8.5vh;
     }
 }
 

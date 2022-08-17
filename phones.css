@@ -178,6 +178,41 @@
                 left: 49vw;
                 top: -13vh;
             }
+            /* GPS */
+            #btc9 {
+                left: -8.5vw;
+                top: -5vh;
+            }
+            /* כפתור שחור */
+            #btc4 {
+                left: 5vw;
+                top: -2vh;
+            }
+            /* כפתור אדום */
+            #btc5 {
+                left: -8vw;
+                top: -2vh;
+            }
+            /* צד */
+            #btc7 {
+                left: -20vw;
+                top: -3vh;
+            }
+            /* כפתור הדלקה */
+            #btc2 {
+                left: 13vw;
+                top: -4vh;
+            }
+            /* גויסטיק */
+            #btc3 {
+                left: 11vw;
+                top: -2vh;
+            }
+            /* כפתור חזרה הביתה */
+            #btc6 {
+                left: -15vw;
+                top: -4.5vh;
+            }
         }
         @media (max-aspect-ratio: 10/12) {
             /* למעלה */

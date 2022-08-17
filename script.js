@@ -106,6 +106,12 @@ let data = {
         "paragraph": "הטאבלט ייתפס ויוחזק על ידי חלק זה.",
         "paragraph2": ""
     },
+    "c9": {
+        "title": "GPS",
+        "subtitle": "P-Position-בתוך המצב ישנם שלושה מצבים (לפי השטח ואינם ניתנים לבחירה):",
+        "paragraph": "GPS-P-GPS פועל חיישנים עובדים, ברומטר עובד. המצד האידיאלי ורק בו נטיס. GPS -P-OPTI לא זמין, חיישנים עובדים, ברומטר עובד. GPS -P-ATTI וחיישנים אינם פועלים, הרחפן יכול להשתמש בברומטר שלו בלבד ובזיכרון מקומי (cache)למציאת מיקום במרחב.",
+        "paragraph2": "לא נטנס כאשר הרחפן נמצא על מצב P-OPTI ו P-ATTI . אם אנחנו כבר באוויר- חובה להביא את הרחטן ישר להנחתה !!"
+    },
     "u3": {
         "title": "מערכת אופטי וויז'יון VPS",
         "subtitle": "שתי מצלמות (שלא נועדו  לצילום), הנמצאות בתחתית הרחפן",
@@ -246,6 +252,9 @@ const addListeners = (landscape) => {
     // 
     document.getElementById("btc8").addEventListener("click", function() {
         showCard('c8')
+    });
+    document.getElementById("btc9").addEventListener("click", function() {
+        showCard('c9')
     });
     document.getElementById("btu2").addEventListener("click", function() {
         showCard('u2')
