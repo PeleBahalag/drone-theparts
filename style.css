@@ -15,6 +15,49 @@ body {
     background-size: 100vw 200vh;
 }
 
+#starter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999999999999;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(139, 189, 223) 100%);
+    margin: 0;
+    opacity: 1;
+    transition: all 1s ease;
+    /* transition: z-index .1s ease; */
+}
+
+.information-card {
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    filter: drop-shadow(10px 10px 30px);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3vmax;
+}
+
+#play {
+    position: absolute;
+    top: 40vh;
+    left: 2vw;
+    cursor: pointer;
+    width: 8vmax;
+    filter: brightness(80%);
+    transition: all .4s ease;
+}
+
+#play:hover {
+    filter: brightness(40%);
+}
+
 #popup {
     z-index: 9999999999999999;
     top: -20vmin;

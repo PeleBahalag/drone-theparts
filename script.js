@@ -174,7 +174,13 @@ window.addEventListener("load", () => {
     page1 = document.getElementById("page1");
     page2 = document.getElementById("page2");
     page3 = document.getElementById("page3");
+    document.getElementById('play').addEventListener('click', () => {
+        document.getElementById('starter').style.opacity = '0';
+        setTimeout(function() {
+            document.getElementById('starter').style.zIndex = '-1';
+        }, 100);
 
+    });
 
     // Portrait
     if (window.innerHeight > window.innerWidth) {
