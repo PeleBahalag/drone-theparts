@@ -109,6 +109,13 @@ window.addEventListener('load', () => {
     document.getElementById('lomda').addEventListener('click', () => {
         window.location.href = ("./index.html");
     });
+    document.getElementById('start-btn').addEventListener('click', () => {
+        document.getElementById('test-starter').style.opacity = '0';
+        setTimeout(function() {
+            document.getElementById('test-starter').style.zIndex = '-1';
+        }, 100);
+
+    });
 });
 
 const startTest = () => {

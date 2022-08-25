@@ -151,6 +151,7 @@ let data = {
     "drown-btn-count": 8,
     "controller-btn-count": 9
 };
+let cardOpened = false;
 
 
 const scrollReaction = () => {
@@ -174,7 +175,7 @@ window.addEventListener("load", () => {
     page1 = document.getElementById("page1");
     page2 = document.getElementById("page2");
     page3 = document.getElementById("page3");
-    document.getElementById('play').addEventListener('click', () => {
+    document.getElementById('start-btn').addEventListener('click', () => {
         document.getElementById('starter').style.opacity = '0';
         setTimeout(function() {
             document.getElementById('starter').style.zIndex = '-1';
@@ -337,9 +338,14 @@ const showCard = (btnNum) => {
     document.getElementById("info-page1-subttl").innerText = data[btnNum].subtitle;
     document.getElementById("info-page1-para").innerText = data[btnNum].paragraph;
     document.getElementById("info-page1-para2").innerText = data[btnNum].paragraph2;
+    if (cardOpened) {
+        document.getElementById('body').addEventListener('mouseup', hideCard);
+    }
+    cardOpened = true;
 }
 
 const hideCard = () => {
+    cardOpened = false;
     document.getElementById("info-page1").style.display = 'none';
     document.getElementById("info-page1").classList.remove("showCard");
 }

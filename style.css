@@ -15,6 +15,14 @@ body {
     background-size: 100vw 200vh;
 }
 
+#body {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 #starter {
     position: fixed;
     top: 0;
@@ -28,61 +36,146 @@ body {
     margin: 0;
     opacity: 1;
     transition: all 1s ease;
-    /* transition: z-index .1s ease; */
+}
+
+#test-starter {
+    direction: rtl;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999999999999999999999;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(139, 189, 223) 100%);
+    margin: 0;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.information-test {
+    position: absolute;
+    top: 20vh;
+    right: 20vw;
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    filter: drop-shadow(10px 10px 30px);
+    border-radius: 30px;
+    text-align: center;
+    padding: 0 5vw 0 5vw;
+    animation: slideIn 1s ease 0s both;
 }
 
 .information-card {
     position: absolute;
     top: 20vh;
     left: 20vw;
-    width: 60vw;
+    width: 50vw;
     height: 60vh;
     background-color: white;
     filter: drop-shadow(10px 10px 30px);
     border-radius: 30px;
     text-align: center;
-    font-size: 1.3vmax;
+    padding: 0 5vw 0 5vw;
 }
 
-#play {
+.starter-title {
+    position: relative;
+    margin-top: 10vh;
+    animation: fadeIn 2s ease .4s both;
+    font-size: 3vmax;
+    line-height: 150%;
+}
+
+.starter-p1 {
+    animation: fadeIn 1s ease 3s both;
+}
+
+.starter-p2 {
+    animation: fadeIn 1s ease 5s both;
+}
+
+.test-p1 {
+    animation: fadeIn 1s ease 2s both;
+}
+
+.test-p2 {
+    animation: fadeIn 1s ease 3s both;
+}
+
+.test-p3 {
+    font-size: 2vmax;
+    left: -6vmax;
+    top: 3vh;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(10, 109, 83), 0 0 20px rgb(255, 255, 255, 1), 0 0 30px rgb(0, 42, 255);
+}
+
+.start-p {
+    margin: 5vh 0 5vh 0;
+    font-size: 1.5vmax;
+    line-height: 150%;
+}
+
+.play-p {
     position: absolute;
     top: 40vh;
     left: 2vw;
     cursor: pointer;
+    width: 20vmax;
+    transition: all .4s ease;
+    animation: fadeIn 1s ease 3s both;
+}
+
+#start-btn {
+    animation: fadeIn 1s ease 5s both;
+}
+
+#play2 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 8vmax;
     filter: brightness(80%);
     transition: all .4s ease;
 }
 
-#play:hover {
+#play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8vmax;
+    filter: brightness(80%);
+    transition: all .4s ease;
+}
+
+#play-p:hover #play {
     filter: brightness(40%);
 }
 
-#popup {
-    z-index: 9999999999999999;
-    top: -20vmin;
-    position: fixed;
-    width: 100vw;
-    height: 10vmin;
-    background-color: rgba(199, 230, 246, 0.6);
-    filter: drop-shadow(2px 3px 5px);
-    border-radius: 0 0 40px 40px;
-    font-size: 2.5vmin;
-    animation: showPopup 9s ease;
+#play-p:hover #play2 {
+    filter: brightness(120%);
 }
 
-@keyframes showPopup {
+@keyframes fadeIn {
     0% {
-        top: -20vmin;
-    }
-    10% {
-        top: 0;
-    }
-    90% {
-        top: 0;
+        opacity: 0;
     }
     100% {
-        top: -20vmin;
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        width: 0;
+        right: -100vw;
+    }
+    100% {
+        width: 50vw;
+        right: 20vw;
     }
 }
 
@@ -90,7 +183,7 @@ body {
     overflow: hidden;
 }
 
-#ltldrown {
+.ltldrown {
     width: 80vw;
     position: fixed;
     left: 10vw;

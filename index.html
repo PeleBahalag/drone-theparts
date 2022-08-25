@@ -12,292 +12,295 @@
 </head>
 
 <body>
+
     <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
     <meta name="viewport" content="user-scalable=no" />
-    <img src="./assets/graphics/newgif.gif" id="ltldrown" />
-    <button id="test" class="custom-btn btn-6"><span>← למבחן</span></button>
-    <img id="logo-sayarim" src="./assets/graphics/סמל סיירים ללא רקע.png" />
-    <div id="credits" class="card">
-        <img id="pele" src="./assets/graphics/פלא.png" />
-        <p>אבחון, פיתוח מוצר ותכנות: רב"ט שחר עקיבא</p>
-        <p>גרפיקה: רב"ט נעמי שבת</p>
-    </div>
-
-    <!-- Top popup -->
-    <!-- <div id="popup">
-        <p>כדי ללמוד עוד על החלקים לחצו על הנקודות האדומות שלידם.</p>
-        <p>לחצו על הנקודה הכחולה בשביל ללמוד על חלקים חדשים.</p>
-    </div> -->
-    <div id="starter">
-        <div class="information-card">
-            <h1>ברוכים הבאים ללומדת חלקי הרחפן</h1>
-            <p>לחיצה על הנקודות האדומות תראה לכם הסבר על החלק שעליו הן נמצאות.</p>
-            <p>לחיצה על הנקודות הכחולות תפתח לכם עוד פרספקטיבה וחלקים נוספים ללמוד עליהם.</p>
-            <img id="play" src="./assets/graphics/play.gif" />
+    <div id="body">
+        <img src="./assets/graphics/newgif.gif" class="ltldrown" />
+        <button id="test" class="custom-btn btn-6"><span>← למבחן</span></button>
+        <img id="logo-sayarim" src="./assets/graphics/סמל סיירים ללא רקע.png" />
+        <div id="credits" class="card">
+            <img id="pele" src="./assets/graphics/פלא.png" />
+            <p>אבחון, פיתוח מוצר ותכנות: רב"ט שחר עקיבא</p>
+            <p>גרפיקה: רב"ט נעמי שבת</p>
         </div>
-    </div>
 
-    <!-- Info Card -->
-    <div id="info-page1" class="card">
-        <p id="x">x</p>
-        <h1 id="info-page1-ttl">שם החלק</h1>
-        <h4 id="info-page1-subttl">כותרת משנה</h4>
-        <p id="info-page1-para">כאן יוצג הסבר על החלק</p>
-        <p id="info-page1-para2">כאן יוצג הסבר על החלק</p>
-    </div>
 
-    <!-- Page 1- the drown -->
-    <div id="page1" class="page1-shown">
-        <div id="next">
-            <h1>לשלט
-                <br> ↓
-            </h1>
-        </div>
-        <img id="drown" src="./assets/graphics/drown.svg" />
-
-        <!-- buttons -->
-        <div id="btd1" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+        <div id="starter">
+            <img src="./assets/graphics/newgif.gif" class="ltldrown" />
+            <div class="information-card">
+                <h1 class="starter-title">ברוכים הבאים ללומדת חלקי הרחפן</h1>
+                <p class="starter-p1 start-p">לחיצה על הנקודות האדומות תראה לכם הסבר על החלק שעליו הן נמצאות.</p>
+                <p class="starter-p2 start-p">לחיצה על הנקודות הכחולות תפתח לכם עוד פרספקטיבה וחלקים נוספים ללמוד עליהם.</p>
+                <span class='play-p' id="start-btn">
+                <img id="play" src="./assets/graphics/play.gif" />
+                <p class="test-p3">בואו נתחיל!</p>
+            </span>
             </div>
         </div>
+        <!-- <div id="window"> -->
+        <!-- Info Card -->
+        <div id="info-page1" class="card">
+            <p id="x">x</p>
+            <h1 id="info-page1-ttl">שם החלק</h1>
+            <h4 id="info-page1-subttl">כותרת משנה</h4>
+            <p id="info-page1-para">כאן יוצג הסבר על החלק</p>
+            <p id="info-page1-para2">כאן יוצג הסבר על החלק</p>
+        </div>
 
-        <div id="btd2" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+        <!-- Page 1- the drown -->
+        <div id="page1" class="page1-shown">
+            <div id="next">
+                <h1>לשלט
+                    <br> ↓
+                </h1>
             </div>
-        </div>
+            <img id="drown" src="./assets/graphics/drown.svg" />
 
-        <div id="btd3" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <!-- buttons -->
+            <div id="btd1" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btd4" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btd2" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btd5" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btd3" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btd6" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btd4" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btd7" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btd5" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btd8" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btd6" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btd9" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+            <div id="btd7" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
-        <!-- נורית חיווי מאחורי הרחפן -->
-        <div id="btd10" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+
+            <div id="btd8" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-
-
-    </div>
-
-    <!-- Page 2- the controller -->
-    <div id="page2" class="page2-hidden">
-        <div id="prev">
-            <h1>↑
-                <br> לרחפן
-            </h1>
-        </div>
-        <img id="controller" src="./assets/graphics/controller.svg" />
-
-        <!-- buttons -->
-        <div id="btc1" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btd9" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+                </div>
             </div>
-        </div>
-
-        <div id="btc2" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <!-- נורית חיווי מאחורי הרחפן -->
+            <div id="btd10" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
+
+
+
         </div>
 
-        <div id="btc3" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+        <!-- Page 2- the controller -->
+        <div id="page2" class="page2-hidden">
+            <div id="prev">
+                <h1>↑
+                    <br> לרחפן
+                </h1>
             </div>
-        </div>
+            <img id="controller" src="./assets/graphics/controller.svg" />
 
-        <div id="btc4" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <!-- buttons -->
+            <div id="btc1" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btc5" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btc2" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btc6" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btc3" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btc7" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+            <div id="btc4" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-        <div id="btc8" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="btc5" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
-        <!-- GPS on screen -->
-        <div id="btc9" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+
+            <div id="btc6" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
 
-    </div>
-
-
-    <!-- Page 3- the controller's side -->
-    <div id="page3" class="page3-shown">
-        <img id="side" src="./assets/graphics/controller-side.svg" />
-
-        <!-- buttons -->
-        <div id="bts1" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+            <div id="btc7" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+                </div>
             </div>
-        </div>
-        <div id="bts2" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+
+            <div id="btc8" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
-        <div id="bts3" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <!-- GPS on screen -->
+            <div id="btc9" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
+
         </div>
-        <div id="bts4" class="drown-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
-            </div>
-        </div>
-    </div>
 
 
+        <!-- Page 3- the controller's side -->
+        <div id="page3" class="page3-shown">
+            <img id="side" src="./assets/graphics/controller-side.svg" />
 
-    <!-- Page 4- underneath the drown -->
-    <div id="page4">
-        <img id="side" src="./assets/graphics/drown-down.svg" />
-
-        <!-- buttons -->
-        <div id="btu1" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+            <!-- buttons -->
+            <div id="bts1" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+                </div>
             </div>
-        </div>
-        <div id="btu2" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="bts2" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
-        <div id="btu3" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="bts3" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
-        </div>
-
-        <div id="btu4" class="controller-btn">
-            <div id="btn">
-                <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
-                <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
-                <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+            <div id="bts4" class="drown-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
             </div>
         </div>
 
 
+
+        <!-- Page 4- underneath the drown -->
+        <div id="page4">
+            <img id="side" src="./assets/graphics/drown-down.svg" />
+
+            <!-- buttons -->
+            <div id="btu1" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/b1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/b2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/b3.png" />
+                </div>
+            </div>
+            <div id="btu2" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
+            </div>
+            <div id="btu3" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
+            </div>
+
+            <div id="btu4" class="controller-btn">
+                <div id="btn">
+                    <img class="circle" id="inner-dot" src="./assets/graphics/but1.png" />
+                    <img class="circle" id="outer2" src="./assets/graphics/but2.png" />
+                    <img class="circle" id="outer3" src="./assets/graphics/but3.png" />
+                </div>
+            </div>
+
+
+        </div>
     </div>
 </body>
 
