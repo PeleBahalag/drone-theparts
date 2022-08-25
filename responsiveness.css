@@ -198,6 +198,15 @@
         left: -5vw;
         top: -14.5vh;
     }
+    .play-p {
+        top: 44vh;
+        left: 3vw;
+    }
+    .start-p {
+        margin: 6vh 0 6vh 0;
+        font-size: 1.5vmax;
+        line-height: 150%;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -358,6 +367,21 @@
         left: -6vw;
         top: -13vh;
     }
+    .play-p {
+        top: 45vh;
+        left: 3vw;
+    }
+    .start-p {
+        margin: 6vh 0 6vh 0;
+        font-size: 1.8vmax;
+        line-height: 150%;
+    }
+    .information-card {
+        top: 20vh;
+        left: 15vw;
+        width: 60vw;
+        height: 60vh;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -460,6 +484,10 @@
         left: 46vw;
         top: 30vh;
     }
+    .play-p {
+        top: 44vh;
+        left: 5vw;
+    }
 }
 
 @media screen and (max-width: 1180px) {
@@ -548,6 +576,27 @@
     #btc9 {
         left: -6vw;
         top: -12vh;
+    }
+    .starter-title {
+        font-size: 3.5vmax;
+    }
+    .play-p {
+        top: 41vh;
+        left: 8vw;
+    }
+    #play {
+        width: 11vmax;
+    }
+    .start-p {
+        margin: 7vh 0 3vh 0;
+        font-size: 1.8vmax;
+        line-height: 150%;
+    }
+    .information-card {
+        top: 20vh;
+        left: 15vw;
+        width: 60vw;
+        height: 60vh;
     }
 }
 
@@ -663,6 +712,27 @@
         left: -6vw;
         top: -11vh;
     }
+    .starter-title {
+        font-size: 4vmax;
+    }
+    .play-p {
+        top: 38vh;
+        left: 8vw;
+    }
+    #play {
+        width: 11vmax;
+    }
+    .start-p {
+        margin: 5vh 0 5vh 0;
+        font-size: 2vmax;
+        line-height: 150%;
+    }
+    .information-card {
+        top: 20vh;
+        left: 10vw;
+        width: 70vw;
+        height: 55vh;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -773,6 +843,31 @@
         left: -7vw;
         top: -10vh;
     }
+    .starter-title {
+        font-size: 4vmax;
+    }
+    .play-p {
+        top: 40vh;
+        left: 8vw;
+    }
+    #play {
+        width: 13vmax;
+    }
+    .test-p3 {
+        left: -3vmax;
+        top: 3.5vh;
+    }
+    .start-p {
+        margin: 5vh 0 5vh 0;
+        font-size: 2.1vmax;
+        line-height: 150%;
+    }
+    .information-card {
+        top: 20vh;
+        left: 10vw;
+        width: 70vw;
+        height: 55vh;
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -846,6 +941,32 @@
     #btc9 {
         left: -8vw;
         top: -9.5vh;
+    }
+    .starter-title {
+        margin-top: 7vh;
+        font-size: 4vmax;
+    }
+    .play-p {
+        top: 42vh;
+        left: 4vw;
+    }
+    #play {
+        width: 11vmax;
+    }
+    .test-p3 {
+        left: -3vmax;
+        top: 3vh;
+    }
+    .start-p {
+        margin: 5vh 0 5vh 0;
+        font-size: 2.1vmax;
+        line-height: 150%;
+    }
+    .information-card {
+        top: 20vh;
+        left: 10vw;
+        width: 70vw;
+        height: 55vh;
     }
 }
 

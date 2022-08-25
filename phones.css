@@ -109,6 +109,33 @@
             left: -7vw;
             top: -16vh;
         }
+        /*  */
+        .starter-title {
+            margin-top: 5vh;
+            font-size: 3vmax;
+        }
+        .play-p {
+            top: 43vh;
+            left: 4vw;
+        }
+        #play {
+            width: 11vmax;
+        }
+        .test-p3 {
+            left: -3vmax;
+            top: 3vh;
+        }
+        .start-p {
+            margin: 3vh 0 3vh 0;
+            font-size: 2.1vmax;
+            line-height: 150%;
+        }
+        .information-card {
+            top: 20vh;
+            left: 10vw;
+            width: 70vw;
+            height: 55vh;
+        }
         @media (max-aspect-ratio: 11/12) {
             /* למעלה */
             #btd8 {
