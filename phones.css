@@ -112,7 +112,7 @@
         /*  */
         .starter-title {
             margin-top: 5vh;
-            font-size: 3vmax;
+            font-size: 2.6vmax;
         }
         .play-p {
             top: 43vh;
@@ -136,11 +136,12 @@
             width: 70vw;
             height: 55vh;
         }
-        .information-test {
-            top: 10vh;
-            right: 10vw;
-            width: 70vw;
-            height: 55vh;
+        .information-test .start-p {
+            font-size: 1.8vmax;
+        }
+        .play-p-test {
+            top: 42vh !important;
+            left: 5vw !important;
         }
         @media (max-aspect-ratio: 11/12) {
             /* למעלה */

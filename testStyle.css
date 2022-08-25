@@ -378,6 +378,43 @@
         #scoreH1 {
             font-size: 3vh;
         }
+        .starter-title {
+            margin-top: 5vh;
+            font-size: 2.6vmax;
+        }
+        .play-p {
+            top: 43vh;
+            left: 4vw;
+        }
+        .play {
+            width: 11vmax;
+        }
+        .test-p3 {
+            left: -3vmax;
+            top: 3vh;
+        }
+        .start-p {
+            margin: 3vh 0 3vh 0;
+            font-size: 2.1vmax;
+            line-height: 150%;
+        }
+        .information-test .start-p {
+            font-size: 1.8vmax;
+        }
+        .information-test {
+            top: 15vh;
+            right: 10vw;
+            width: 70vw;
+            height: 45vh;
+        }
+        #ttl-test {
+            margin-top: 5vh;
+            font-size: 2.6vmax;
+        }
+        .play-p-test {
+            top: 32vh !important;
+            left: 5vw !important;
+        }
     }
     
     @keyframes glow {

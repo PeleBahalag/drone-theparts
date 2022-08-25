@@ -590,6 +590,10 @@
         top: 41vh;
         left: 8vw;
     }
+    .play-p-test {
+        top: 45vh !important;
+        left: 5vw !important;
+    }
     #play {
         width: 11vmax;
     }
@@ -725,14 +729,21 @@
         top: -11vh;
     }
     .starter-title {
-        font-size: 4vmax;
+        font-size: 3.8vmax;
+    }
+    #ttl-test {
+        margin-top: 5vh;
     }
     .play-p {
         top: 38vh;
         left: 8vw;
     }
+    .play-p-test {
+        top: 40vh !important;
+        left: 5vw !important;
+    }
     .play {
-        width: 11vmax;
+        width: 10vmax;
     }
     .start-p {
         margin: 5vh 0 5vh 0;
@@ -997,6 +1008,10 @@
         right: 10vw;
         width: 70vw;
         height: 55vh;
+    }
+    .play-p-test {
+        top: 41vh !important;
+        left: 5vw !important;
     }
 }
 
