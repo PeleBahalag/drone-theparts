@@ -118,7 +118,7 @@
             top: 43vh;
             left: 4vw;
         }
-        #play {
+        .play {
             width: 11vmax;
         }
         .test-p3 {
@@ -131,8 +131,14 @@
             line-height: 150%;
         }
         .information-card {
-            top: 20vh;
+            top: 10vh;
             left: 10vw;
+            width: 70vw;
+            height: 55vh;
+        }
+        .information-test {
+            top: 10vh;
+            right: 10vw;
             width: 70vw;
             height: 55vh;
         }

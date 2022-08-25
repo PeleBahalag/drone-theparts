@@ -133,16 +133,7 @@ body {
     animation: fadeIn 1s ease 5s both;
 }
 
-#play2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 8vmax;
-    filter: brightness(80%);
-    transition: all .4s ease;
-}
-
-#play {
+.play {
     position: absolute;
     top: 0;
     left: 0;
