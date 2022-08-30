@@ -48,9 +48,9 @@ let data = {
     },
     "d8": {
         "title": "סוללה",
-        "subtitle": "",
-        "paragraph": "בMavic2 זמן ההטענה לסוללה אחת הוא שעה ועשרים דקות.",
-        "paragraph2": "נוודא כי הסוללה מלאה ואינה נפוחה/סדוקה או שבורה."
+        "subtitle": "בMavic2 זמן ההטענה לסוללה אחת הוא שעה ועשרים דקות.",
+        "paragraph": "נוודא כי הסוללה מלאה ואינה נפוחה/סדוקה או שבורה.",
+        "paragraph2": ""
     },
     "d10": {
         "title": "נורית חיווי",
@@ -163,12 +163,11 @@ const scrollReaction = () => {
     }
 }
 
-
-
 function disable_scroll_mobile() {
     document.addEventListener('touchmove', preventDefault, false);
 }
 
+// Load function
 window.addEventListener("load", () => {
     toControllerBtn = document.getElementById("next");
     toDrownBtn = document.getElementById("prev");
@@ -180,9 +179,7 @@ window.addEventListener("load", () => {
         setTimeout(function() {
             document.getElementById('starter').style.zIndex = '-1';
         }, 100);
-
     });
-
     // Portrait
     if (window.innerHeight > window.innerWidth) {
         // alert("Please use Landscape!");
@@ -192,7 +189,6 @@ window.addEventListener("load", () => {
     else {
         addListeners(true);
     }
-
 });
 
 // Add all the listeners to the buttons
@@ -291,8 +287,7 @@ const addListeners = (landscape) => {
     }
 }
 
-
-
+// 
 const moveToController = () => {
     page1.style.overFlow = 'scroll';
     page2.style.overFlow = 'scroll';
@@ -312,6 +307,7 @@ const moveToController = () => {
 
 }
 
+// 
 const moveToDrown = () => {
     page1.style.overFlow = 'scroll';
     page2.style.overFlow = 'scroll';
@@ -330,8 +326,9 @@ const moveToDrown = () => {
     page1.classList.add("page1-shown");
 }
 
-
+// Open the card
 const showCard = (btnNum) => {
+    cardOpened = true;
     document.getElementById("info-page1").style.display = 'block';
     document.getElementById("info-page1").classList.add("showCard");
     document.getElementById("info-page1-ttl").innerText = data[btnNum].title;
@@ -341,21 +338,23 @@ const showCard = (btnNum) => {
     if (cardOpened) {
         document.getElementById('body').addEventListener('mouseup', hideCard);
     }
-    cardOpened = true;
 }
 
+// Hide the card
 const hideCard = () => {
     cardOpened = false;
     document.getElementById("info-page1").style.display = 'none';
     document.getElementById("info-page1").classList.remove("showCard");
 }
 
+// Change the picture to side prespective
 const toSide = () => {
     page2.style.display = 'none';
     page3.style.display = 'block';
     window.removeEventListener("wheel", scrollReaction);
 }
 
+// Change the picture to front prespective
 const toFront = () => {
     page2.classList.remove("animsecond-playrev");
     page2.classList.remove("animsecond-play");
@@ -364,12 +363,14 @@ const toFront = () => {
     window.addEventListener("wheel", scrollReaction);
 }
 
+// Change the picture to under prespective
 const toUnder = () => {
     page1.style.display = 'none';
     page4.style.display = 'block';
     window.removeEventListener("wheel", scrollReaction);
 }
 
+// Change the picture to top prespective
 const toTop = () => {
     page4.style.display = 'none';
     page1.style.display = 'block';
@@ -378,6 +379,7 @@ const toTop = () => {
     window.addEventListener("wheel", scrollReaction);
 }
 
+// Change URL to test.html
 const toTest = () => {
     window.location.href = ("./test.html");
 }

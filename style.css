@@ -15,6 +15,15 @@ body {
     background-size: 100vw 200vh;
 }
 
+.button-example {
+    display: inline-block;
+    width: 3vw;
+    margin: 0 2vw 0 2vw;
+    position: relative;
+    direction: rtl;
+    animation: fadeIn 1s ease 5s both;
+}
+
 #body {
     position: fixed;
     left: 0;
@@ -107,14 +116,15 @@ body {
 
 .test-p3 {
     font-size: 2vmax;
-    left: -6vmax;
+    left: 3vmax;
     top: 3vh;
     font-weight: bold;
     text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(10, 109, 83), 0 0 20px rgb(255, 255, 255, 1), 0 0 30px rgb(0, 42, 255);
 }
 
 .start-p {
-    margin: 5vh 0 5vh 0;
+    direction: rtl;
+    margin: 1vh 0 1vh 0;
     font-size: 1.5vmax;
     line-height: 150%;
 }
