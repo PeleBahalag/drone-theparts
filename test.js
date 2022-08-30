@@ -105,6 +105,7 @@ let allAnswered = false;
 
 
 window.addEventListener('load', () => {
+    sessionStorage.setItem('visited', 'true');
     startTest();
     document.getElementById('lomda').addEventListener('click', () => {
         window.location.href = ("./index.html");

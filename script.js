@@ -189,7 +189,20 @@ window.addEventListener("load", () => {
     else {
         addListeners(true);
     }
+
+    // Get sessionStorage information
+    getSessionInfo();
 });
+
+const getSessionInfo = () => {
+    if (sessionStorage.getItem('visited') !== 'true') {
+        sessionStorage.setItem('visited', 'false');
+    }
+    // If visited the page already
+    else {
+        document.getElementById('starter').style.display = 'none';
+    }
+}
 
 // Add all the listeners to the buttons
 const addListeners = (landscape) => {
