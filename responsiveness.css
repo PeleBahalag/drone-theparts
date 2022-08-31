@@ -203,7 +203,7 @@
         left: 3vw;
     }
     .start-p {
-        margin: 6vh 0 6vh 0;
+        margin: 0;
         font-size: 1.5vmax;
         line-height: 150%;
     }
@@ -372,7 +372,7 @@
         left: 3vw;
     }
     .start-p {
-        margin: 6vh 0 6vh 0;
+        margin: 0;
         font-size: 1.8vmax;
         line-height: 150%;
     }
@@ -598,7 +598,7 @@
         width: 11vmax;
     }
     .start-p {
-        margin: 7vh 0 3vh 0;
+        margin: 0;
         font-size: 1.8vmax;
         line-height: 150%;
     }
@@ -746,7 +746,7 @@
         width: 10vmax;
     }
     .start-p {
-        margin: 5vh 0 5vh 0;
+        margin: 0;
         font-size: 2vmax;
         line-height: 150%;
     }
@@ -887,7 +887,7 @@
         top: 3.5vh;
     }
     .start-p {
-        margin: 5vh 0 5vh 0;
+        margin: 0;
         font-size: 2.1vmax;
         line-height: 150%;
     }
@@ -993,7 +993,7 @@
         top: 3vh;
     }
     .start-p {
-        margin: 5vh 0 5vh 0;
+        margin: 0;
         font-size: 2.1vmax;
         line-height: 150%;
     }

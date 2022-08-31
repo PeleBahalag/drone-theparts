@@ -126,9 +126,12 @@
             top: 3vh;
         }
         .start-p {
-            margin: 3vh 0 3vh 0;
+            margin: 0;
             font-size: 2.1vmax;
             line-height: 150%;
+        }
+        .button-example {
+            width: 5vh;
         }
         .information-card {
             top: 10vh;

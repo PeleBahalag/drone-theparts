@@ -18,7 +18,7 @@ body {
 .button-example {
     display: inline-block;
     width: 3vw;
-    margin: 0 2vw 0 2vw;
+    margin: 0;
     position: relative;
     direction: rtl;
     animation: fadeIn 1s ease 5s both;
@@ -124,7 +124,7 @@ body {
 
 .start-p {
     direction: rtl;
-    margin: 1vh 0 1vh 0;
+    margin: 0;
     font-size: 1.5vmax;
     line-height: 150%;
 }
