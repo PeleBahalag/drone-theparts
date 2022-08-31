@@ -346,7 +346,7 @@
         #questions {
             font-size: 1.2vh;
             height: 30vh;
-            top: 25vh;
+            top: 21vh;
         }
         #answers {
             top: 4vh;
@@ -456,7 +456,7 @@
             font-size: 1.8vmax;
         }
         .information-test {
-            top: 15vh;
+            top: 25vh;
             right: 10vw;
             width: 70vw;
             height: 45vh;
