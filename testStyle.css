@@ -3,6 +3,7 @@
         top: 5vh;
         left: 82vw;
         width: 13vw;
+        z-index: 9999999999999999999999999999999999;
     }
     
     .center {
@@ -462,7 +463,7 @@
         }
         #ttl-test {
             margin-top: 5vh;
-            font-size: 2.6vmax;
+            font-size: 2vmax !important;
         }
         .play-p-test {
             top: 32vh !important;
