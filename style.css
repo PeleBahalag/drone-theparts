@@ -68,7 +68,7 @@ body {
     top: 20vh;
     right: 20vw;
     width: 50vw;
-    height: 60vh;
+    height: 62vh;
     background-color: white;
     filter: drop-shadow(10px 10px 30px);
     border-radius: 30px;
@@ -175,8 +175,8 @@ body {
         right: -100vw;
     }
     100% {
-        width: 70vw;
-        right: 10vw;
+        width: 60vw;
+        right: 15vw;
     }
 }
 

@@ -5,6 +5,12 @@
         width: 13vw;
     }
     
+    .center {
+        left: 60% !important;
+        top: 25vh !important;
+        z-index: 999999999999999 !important;
+    }
+    
     #questions {
         position: relative;
         left: 20vw;
@@ -87,10 +93,10 @@
         display: none;
         position: absolute;
         width: 65vw;
-        height: 70vh;
+        height: 68vh;
         left: 17.5vw;
         background-color: white;
-        border-radius: 30px;
+        border-radius: 2vw;
         top: 15vh;
         z-index: 999999;
         filter: drop-shadow(5px 10px 30px);
@@ -164,7 +170,7 @@
         animation: glow 2s ease infinite;
     }
     
-    @media screen and (max-width: 1460px) {
+    @media screen and (max-width: 1500px) {
         #send {
             top: 85vh;
         }
@@ -190,6 +196,18 @@
             width: 15vw;
             left: 80vw;
         }
+        #finished {
+            width: 65vw;
+            height: 60vh;
+            left: 17.5vw;
+            top: 15vh;
+        }
+        #inside {
+            width: 55vw;
+            height: 41vh;
+            left: 4vw;
+            top: 8vh;
+        }
     }
     
     @media screen and (max-width: 1200px) {
@@ -208,6 +226,23 @@
         #qList {
             height: 10%;
         }
+        #finished {
+            width: 65vw;
+            height: 50vh;
+            left: 17.5vw;
+            top: 10vh;
+        }
+        #inside {
+            width: 55vw;
+            height: 35vh;
+            left: 4vw;
+            top: 6vh;
+        }
+        .center {
+            left: 60% !important;
+            top: 17vh !important;
+            z-index: 999999999999999 !important;
+        }
     }
     
     @media screen and (max-width: 1000px) {
@@ -224,8 +259,25 @@
             height: 10%;
         }
         #lomda {
-            width: 20vw;
+            width: 19vw;
             left: 75vw;
+        }
+        #finished {
+            width: 65vw;
+            height: 45vh;
+            left: 17.5vw;
+            top: 10vh;
+        }
+        #inside {
+            width: 55vw;
+            height: 35vh;
+            left: 4vw;
+            top: 4vh;
+        }
+        .center {
+            left: 54% !important;
+            top: 14vh !important;
+            z-index: 999999999999999 !important;
         }
     }
     
