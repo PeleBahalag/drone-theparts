@@ -437,15 +437,15 @@
             font-size: 2.6vmax;
         }
         .play-p {
-            top: 43vh;
+            top: 45vh;
             left: 4vw;
         }
         .play {
-            width: 11vmax;
+            width: 8vmax;
         }
         .test-p3 {
-            left: 5vmax;
-            top: 3vh;
+            left: 2vmax;
+            top: 1.5vh;
         }
         .start-p {
             margin: 3vh 0 3vh 0;
@@ -466,8 +466,8 @@
             font-size: 2vmax !important;
         }
         .play-p-test {
-            top: 32vh !important;
-            left: 5vw !important;
+            top: 36vh !important;
+            left: 3vw !important;
         }
     }
     
