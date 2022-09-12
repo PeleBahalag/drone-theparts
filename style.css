@@ -184,7 +184,7 @@ body {
     overflow: hidden;
 }
 
-.ltldrown {
+.ltldrone {
     width: 80vw;
     position: fixed;
     left: 10vw;
@@ -251,7 +251,7 @@ p {
     top: 0vmin;
 }
 
-#drown {
+#drone {
     width: 80vw;
     position: absolute;
     left: 50%;
