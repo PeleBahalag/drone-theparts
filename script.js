@@ -148,7 +148,7 @@ let data = {
         "paragraph": "גלגלת ימנית- חוגת בהירות המצלמה. ניתן לשנות את רמה החשיפה לאור.",
         "paragraph2": "גלגלת שמאלית- חוגת גימבל- אחראית על העלאת והורדת המצלמה."
     },
-    "drown-btn-count": 8,
+    "drone-btn-count": 8,
     "controller-btn-count": 9
 };
 let cardOpened = false;
@@ -157,7 +157,7 @@ let cardOpened = false;
 const scrollReaction = () => {
     console.log(event.deltaY)
     if (event.deltaY < 0) {
-        moveToDrown();
+        moveToDrone();
     } else {
         moveToController();
     }
@@ -170,7 +170,7 @@ function disable_scroll_mobile() {
 // Load function
 window.addEventListener("load", () => {
     toControllerBtn = document.getElementById("next");
-    toDrownBtn = document.getElementById("prev");
+    toDroneBtn = document.getElementById("prev");
     page1 = document.getElementById("page1");
     page2 = document.getElementById("page2");
     page3 = document.getElementById("page3");
@@ -240,7 +240,7 @@ const addListeners = (landscape) => {
     document.getElementById("btd10").addEventListener("click", function() {
         showCard('d10')
     });
-    // drown top and under
+    // drone top and under
     document.getElementById("btd9").addEventListener("click", toUnder);
     document.getElementById("btu1").addEventListener("click", toTop);
     // 
@@ -292,7 +292,7 @@ const addListeners = (landscape) => {
     });
 
     document.getElementById("x").addEventListener("click", hideCard);
-    toDrownBtn.addEventListener("click", moveToDrown);
+    toDroneBtn.addEventListener("click", moveToDrone);
     toControllerBtn.addEventListener("click", moveToController);
 
     if (landscape) {
@@ -321,7 +321,7 @@ const moveToController = () => {
 }
 
 // 
-const moveToDrown = () => {
+const moveToDrone = () => {
     page1.style.overFlow = 'scroll';
     page2.style.overFlow = 'scroll';
 
