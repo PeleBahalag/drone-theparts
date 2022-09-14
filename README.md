@@ -1,3 +1,3 @@
 # drone-theparts
 
-https://pelebahalag.github.io/drone-theparts/
+https://pelebahalag.github.io/droneParts
