@@ -1,484 +1,500 @@
-    #lomda {
-        direction: ltr;
-        top: 5vh;
-        left: 82vw;
-        width: 13vw;
-        z-index: 9999999999999999999999999999999999;
-    }
-    
-    .center {
-        left: 60% !important;
-        top: 25vh !important;
-        z-index: 999999999999999 !important;
-    }
-    
-    #questions {
-        position: relative;
-        left: 20vw;
-        z-index: 999999;
-        margin: 0;
-        top: 2vh;
-        font-size: 1vw;
-        width: 60vw;
-        height: 60vh;
-        border-radius: 10px;
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-        transition: all .2s ease;
-        background-color: rgba(255, 255, 255, .7);
-    }
-    
-    #qnum {
-        font-size: 1.5vmax;
-        text-align: right;
-        margin: 1vw;
-    }
-    
-    #qList {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 15%;
-        bottom: 0%;
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-    
-    .qc {
-        border-radius: 10px 1px 1px 1px;
-        text-align: center;
-        cursor: pointer;
-        font-size: 2.1vw;
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-        position: relative;
-        width: 9%;
-        height: 100%;
-        background-color: rgba(188, 188, 188, 0.7);
-    }
-    
-    .answered {
-        background-color: rgba(69, 69, 69, 0.7);
-    }
-    
-    .current {
-        background-color: rgba(255, 255, 255, 0.7) !important;
-    }
-    
-    #answers {
-        position: relative;
-        top: 7vh;
-        right: 7vw;
-        font-size: 1.3vw;
-    }
-    
-    .answer {
-        text-align: right;
-        cursor: pointer;
-    }
-    
-    .answer:hover {
-        color: rgb(156, 156, 156);
-    }
-    
-    .pick {
-        font-size: 1.9vw;
-    }
-    
-    .chosen {
-        color: rgb(195, 195, 195) !important;
-    }
-    
-    #finished {
-        display: none;
-        position: absolute;
-        width: 65vw;
-        height: 68vh;
-        left: 17.5vw;
-        background-color: white;
-        border-radius: 2vw;
-        top: 15vh;
-        z-index: 999999;
-        filter: drop-shadow(5px 10px 30px);
-    }
-    
-    #inside {
-        display: none;
-        position: relative;
-        width: 55vw;
-        height: 50vh;
-        left: 4vw;
-        background-color: white;
-        border: 1vw rgb(170, 196, 223);
-        border-style: ridge;
-        border-radius: 30px;
-        top: 8vh;
-    }
-    
-    .fh1 {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        font-size: 2.5vw;
-        direction: rtl;
-    }
-    
-    .scorePos {
-        color: green;
-    }
-    
-    .scoreNeg {
-        color: crimson;
-    }
-    
-    #confirm {
-        display: none;
-        position: relative;
-        width: 55vw;
-        height: 50vh;
-        left: 5vw;
-        border-radius: 30px;
-        top: 10vh;
-    }
-    
-    #btnList {
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    
-    .confirmationButton {
-        cursor: pointer;
-        font-size: 2vw;
-        width: 17vw;
-        background-color: rgb(179, 201, 224);
-        text-align: center;
-        direction: rtl;
-        border-radius: 20px;
-        filter: drop-shadow(2px 3px 5px);
-        transition: all .1s ease;
-    }
-    
-    .confirmationButton:active {
-        background-color: rgb(156, 181, 209);
-        filter: drop-shadow(2px 2px 2px);
-    }
-    
-    #scoreNum {
-        font-size: 5vw;
-        animation: glow 2s ease infinite;
-    }
-    
-    @media screen and (max-width: 1500px) {
-        #send {
-            top: 85vh;
-        }
-        #questions {
-            top: 8vh;
-            font-size: 2vh;
-        }
-        .answer,
-        .pick {
-            font-size: 2.8vh;
-        }
-        #qList {
-            height: 12%;
-        }
-        #qnum,
-        #questionCount {
-            font-size: 2.5vh;
-        }
-        .btn-6>span {
-            font-size: 1.8vh;
-        }
-        #lomda {
-            width: 15vw;
-            left: 80vw;
-        }
-        #finished {
-            width: 65vw;
-            height: 60vh;
-            left: 17.5vw;
-            top: 15vh;
-        }
-        #inside {
-            width: 55vw;
-            height: 41vh;
-            left: 4vw;
-            top: 8vh;
-        }
-    }
-    
-    @media screen and (max-width: 1200px) {
-        #send {
-            top: 85vh;
-        }
-        #questions {
-            font-size: 1.8vh;
-            width: 70vw;
-            left: 15vw;
-        }
-        .answer,
-        .pick {
-            font-size: 2.8vh;
-        }
-        #qList {
-            height: 10%;
-        }
-        #finished {
-            width: 65vw;
-            height: 50vh;
-            left: 17.5vw;
-            top: 10vh;
-        }
-        #inside {
-            width: 55vw;
-            height: 35vh;
-            left: 4vw;
-            top: 6vh;
-        }
-        .center {
-            left: 60% !important;
-            top: 17vh !important;
-            z-index: 999999999999999 !important;
-        }
-    }
-    
-    @media screen and (max-width: 1000px) {
-        #questions {
-            font-size: 1.8vh;
-            width: 80vw;
-            left: 10vw;
-        }
-        .answer,
-        .pick {
-            font-size: 2.8vh;
-        }
-        #qList {
-            height: 10%;
-        }
-        #lomda {
-            width: 19vw;
-            left: 75vw;
-        }
-        #finished {
-            width: 65vw;
-            height: 45vh;
-            left: 17.5vw;
-            top: 10vh;
-        }
-        #inside {
-            width: 55vw;
-            height: 35vh;
-            left: 4vw;
-            top: 4vh;
-        }
-        .center {
-            left: 54% !important;
-            top: 14vh !important;
-            z-index: 999999999999999 !important;
-        }
-    }
-    
-    @media screen and (max-width: 800px) {
-        #send {
-            top: 83vh;
-        }
-        #questions {
-            font-size: 1.8vh;
-            height: 50vh;
-            top: 15vh;
-        }
-        .answer,
-        .pick {
-            font-size: 2.4vh;
-        }
-        #qList {
-            height: 10%;
-        }
-        #lomda {
-            width: 26vw;
-            left: 68vw;
-        }
-    }
-    
-    @media screen and (max-width: 700px) {
-        #questions {
-            font-size: 1.8vh;
-            height: 45vh;
-            top: 18vh;
-        }
-        .answer,
-        .pick {
-            font-size: 2vh;
-        }
-        #qList {
-            height: 9%;
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        #questions {
-            font-size: 1.5vh;
-            height: 45vh;
-            top: 18vh;
-        }
-        .answer,
-        .pick {
-            font-size: 2vh;
-        }
-        #qList {
-            height: 10%;
-        }
-        #qnum,
-        #questionCount {
-            font-size: 2vh;
-        }
-        #lomda {
-            width: 35vw;
-            left: 55vw;
-        }
-    }
-    
-    @media (orientation: portrait) {
-        #questions {
-            font-size: 1.2vh;
-            height: 30vh;
-            top: 21vh;
-        }
-        #answers {
-            top: 4vh;
-        }
-        .answer,
-        .pick {
-            font-size: 1.5vh;
-        }
-        #qnum,
-        #questionCount {
-            font-size: 1.7vh;
-        }
-        #lomda {
-            width: 40vw;
-            top: 12vh;
-            left: 50vw;
-            height: 1vh;
-            padding: 1.4vh 0 3.2vh 0;
-        }
-        #send {
-            width: 40vw;
-            left: 2vw;
-            height: 1vh;
-            padding: 1.4vh 0 3.2vh 0;
-            top: 70vh;
-        }
-        #credits {
-            padding-top: 1vh;
-            top: 3vh;
-            font-size: 1.3vh;
-            width: 60vw;
-            height: 15vw;
-            border-radius: 10px;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-            transition: all .2s ease;
-        }
-        #credits p {
-            margin: 1vh 2vh 1vh 1vh;
-        }
-        #logo-sayarim {
-            left: 0;
-            margin: 1vw;
-            top: 2vh;
-            width: 15vw;
-            cursor: pointer;
-        }
-        #pele {
-            left: 2vw;
-            top: 3vh;
-            width: 12vw;
-        }
-        #logo-sayarim:hover+#credits,
-        #credits:hover {
-            left: 20vw;
-        }
-        #finished {
-            width: 80vw;
-            left: 10vw;
-            height: 30vh;
-            top: 30vh;
-        }
-        #confirm {
-            width: 80%;
-            left: 10%;
-            height: 80%;
-            top: 10%;
-        }
-        #inside {
-            padding: 10% 0 10% 0;
-            width: 80%;
-            left: 9%;
-            height: 50%;
-            top: 10%;
-        }
-        .fh1 {
-            font-size: 1.7vh;
-        }
-        .confirmationButton {
-            font-size: 1.6vh;
-            width: 24vw;
-            padding: .5vh .5vh;
-        }
-        #scoreH1 {
-            font-size: 3vh;
-        }
-        .starter-title {
-            margin-top: 5vh;
-            font-size: 2.6vmax;
-        }
-        .play-p {
-            top: 45vh;
-            left: 4vw;
-        }
-        .play {
-            width: 8vmax;
-        }
-        .test-p3 {
-            left: 2vmax;
-            top: 1.5vh;
-        }
-        .start-p {
-            margin: 3vh 0 3vh 0;
-            font-size: 2.1vmax;
-            line-height: 150%;
-        }
-        .information-test .start-p {
-            font-size: 1.8vmax;
-        }
-        .information-test {
-            top: 25vh;
-            right: 10vw;
-            width: 70vw;
-            height: 45vh;
-        }
-        #ttl-test {
-            margin-top: 5vh;
-            font-size: 2vmax !important;
-        }
-        .play-p-test {
-            top: 36vh !important;
-            left: 3vw !important;
-        }
-    }
-    
-    @keyframes glow {
-        0% {
-            filter: brightness(90%);
-        }
-        50% {
-            filter: brightness(200%);
-        }
-        100% {
-            filter: brightness(90%);
-        }
-    }
+#lomda,
+#checkTest {
+  direction: ltr;
+  top: 5vh;
+  left: 82vw;
+  width: 13vw;
+  z-index: 9999999999999999999999999999999999;
+}
+
+.center {
+  left: 60% !important;
+  top: 25vh !important;
+  z-index: 999999999999999 !important;
+}
+
+#questions {
+  position: relative;
+  left: 20vw;
+  z-index: 999999;
+  margin: 0;
+  top: 2vh;
+  font-size: 1vw;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#qnum {
+  font-size: 1.5vmax;
+  text-align: right;
+  margin: 1vw;
+}
+
+#qList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  bottom: 0%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.qc {
+  border-radius: 10px 1px 1px 1px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.1vw;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 9%;
+  height: 100%;
+  background-color: rgba(188, 188, 188, 0.7);
+}
+
+.answered {
+  background-color: rgba(69, 69, 69, 0.7);
+}
+
+.current {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.right {
+  color: green;
+}
+.rightUser {
+  color: rgb(74, 255, 74) !important;
+}
+
+.wrong {
+  color: brown;
+}
+
+.wrongUser {
+  color: rgb(234, 85, 85) !important;
+}
+
+#answers {
+  position: relative;
+  top: 7vh;
+  right: 7vw;
+  font-size: 1.3vw;
+}
+
+.answer {
+  text-align: right;
+  cursor: pointer;
+}
+
+.answer:hover {
+  color: rgb(156, 156, 156);
+}
+
+.pick {
+  font-size: 1.9vw;
+}
+
+.chosen {
+  color: rgb(195, 195, 195) !important;
+}
+
+#finished {
+  display: none;
+  position: absolute;
+  width: 65vw;
+  height: 68vh;
+  left: 17.5vw;
+  background-color: white;
+  border-radius: 2vw;
+  top: 15vh;
+  z-index: 999999;
+  filter: drop-shadow(5px 10px 30px);
+}
+
+#inside {
+  display: none;
+  position: relative;
+  width: 55vw;
+  height: 50vh;
+  left: 4vw;
+  background-color: white;
+  border: 1vw rgb(170, 196, 223);
+  border-style: ridge;
+  border-radius: 30px;
+  top: 8vh;
+}
+
+.fh1 {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5vw;
+  direction: rtl;
+}
+
+.scorePos {
+  color: green;
+}
+
+.scoreNeg {
+  color: crimson;
+}
+
+#confirm {
+  display: none;
+  position: relative;
+  width: 55vw;
+  height: 50vh;
+  left: 5vw;
+  border-radius: 30px;
+  top: 10vh;
+}
+
+#btnList {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.confirmationButton {
+  cursor: pointer;
+  font-size: 2vw;
+  width: 17vw;
+  background-color: rgb(179, 201, 224);
+  text-align: center;
+  direction: rtl;
+  border-radius: 20px;
+  filter: drop-shadow(2px 3px 5px);
+  transition: all 0.1s ease;
+}
+
+.confirmationButton:active {
+  background-color: rgb(156, 181, 209);
+  filter: drop-shadow(2px 2px 2px);
+}
+
+#scoreNum {
+  font-size: 5vw;
+  animation: glow 2s ease infinite;
+}
+
+@media screen and (max-width: 1500px) {
+  #send {
+    top: 85vh;
+  }
+  #questions {
+    top: 8vh;
+    font-size: 2vh;
+  }
+  .answer,
+  .pick {
+    font-size: 2.8vh;
+  }
+  #qList {
+    height: 12%;
+  }
+  #qnum,
+  #questionCount {
+    font-size: 2.5vh;
+  }
+  .btn-6 > span {
+    font-size: 1.8vh;
+  }
+  #lomda {
+    width: 15vw;
+    left: 80vw;
+  }
+  #finished {
+    width: 65vw;
+    height: 60vh;
+    left: 17.5vw;
+    top: 15vh;
+  }
+  #inside {
+    width: 55vw;
+    height: 41vh;
+    left: 4vw;
+    top: 8vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #send {
+    top: 85vh;
+  }
+  #questions {
+    font-size: 1.8vh;
+    width: 70vw;
+    left: 15vw;
+  }
+  .answer,
+  .pick {
+    font-size: 2.8vh;
+  }
+  #qList {
+    height: 10%;
+  }
+  #finished {
+    width: 65vw;
+    height: 50vh;
+    left: 17.5vw;
+    top: 10vh;
+  }
+  #inside {
+    width: 55vw;
+    height: 35vh;
+    left: 4vw;
+    top: 6vh;
+  }
+  .center {
+    left: 60% !important;
+    top: 17vh !important;
+    z-index: 999999999999999 !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #questions {
+    font-size: 1.8vh;
+    width: 80vw;
+    left: 10vw;
+  }
+  .answer,
+  .pick {
+    font-size: 2.8vh;
+  }
+  #qList {
+    height: 10%;
+  }
+  #lomda {
+    width: 19vw;
+    left: 75vw;
+  }
+  #finished {
+    width: 65vw;
+    height: 45vh;
+    left: 17.5vw;
+    top: 10vh;
+  }
+  #inside {
+    width: 55vw;
+    height: 35vh;
+    left: 4vw;
+    top: 4vh;
+  }
+  .center {
+    left: 54% !important;
+    top: 14vh !important;
+    z-index: 999999999999999 !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #send {
+    top: 83vh;
+  }
+  #questions {
+    font-size: 1.8vh;
+    height: 50vh;
+    top: 15vh;
+  }
+  .answer,
+  .pick {
+    font-size: 2.4vh;
+  }
+  #qList {
+    height: 10%;
+  }
+  #lomda {
+    width: 26vw;
+    left: 68vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #questions {
+    font-size: 1.8vh;
+    height: 45vh;
+    top: 18vh;
+  }
+  .answer,
+  .pick {
+    font-size: 2vh;
+  }
+  #qList {
+    height: 9%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #questions {
+    font-size: 1.5vh;
+    height: 45vh;
+    top: 18vh;
+  }
+  .answer,
+  .pick {
+    font-size: 2vh;
+  }
+  #qList {
+    height: 10%;
+  }
+  #qnum,
+  #questionCount {
+    font-size: 2vh;
+  }
+  #lomda {
+    width: 35vw;
+    left: 55vw;
+  }
+}
+
+@media (orientation: portrait) {
+  #questions {
+    font-size: 1.2vh;
+    height: 30vh;
+    top: 21vh;
+  }
+  #answers {
+    top: 4vh;
+  }
+  .answer,
+  .pick {
+    font-size: 1.5vh;
+  }
+  #qnum,
+  #questionCount {
+    font-size: 1.7vh;
+  }
+  #lomda {
+    width: 40vw;
+    top: 12vh;
+    left: 50vw;
+    height: 1vh;
+    padding: 1.4vh 0 3.2vh 0;
+  }
+  #send {
+    width: 40vw;
+    left: 2vw;
+    height: 1vh;
+    padding: 1.4vh 0 3.2vh 0;
+    top: 70vh;
+  }
+  #credits {
+    padding-top: 1vh;
+    top: 3vh;
+    font-size: 1.3vh;
+    width: 60vw;
+    height: 15vw;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+  }
+  #credits p {
+    margin: 1vh 2vh 1vh 1vh;
+  }
+  #logo-sayarim {
+    left: 0;
+    margin: 1vw;
+    top: 2vh;
+    width: 15vw;
+    cursor: pointer;
+  }
+  #pele {
+    left: 2vw;
+    top: 3vh;
+    width: 12vw;
+  }
+  #logo-sayarim:hover + #credits,
+  #credits:hover {
+    left: 20vw;
+  }
+  #finished {
+    width: 80vw;
+    left: 10vw;
+    height: 30vh;
+    top: 30vh;
+  }
+  #confirm {
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+  }
+  #inside {
+    padding: 10% 0 10% 0;
+    width: 80%;
+    left: 9%;
+    height: 50%;
+    top: 10%;
+  }
+  .fh1 {
+    font-size: 1.7vh;
+  }
+  .confirmationButton {
+    font-size: 1.6vh;
+    width: 24vw;
+    padding: 0.5vh 0.5vh;
+  }
+  #scoreH1 {
+    font-size: 3vh;
+  }
+  .starter-title {
+    margin-top: 5vh;
+    font-size: 2.6vmax;
+  }
+  .play-p {
+    top: 45vh;
+    left: 4vw;
+  }
+  .play {
+    width: 8vmax;
+  }
+  .test-p3 {
+    left: 2vmax;
+    top: 1.5vh;
+  }
+  .start-p {
+    margin: 3vh 0 3vh 0;
+    font-size: 2.1vmax;
+    line-height: 150%;
+  }
+  .information-test .start-p {
+    font-size: 1.8vmax;
+  }
+  .information-test {
+    top: 25vh;
+    right: 10vw;
+    width: 70vw;
+    height: 45vh;
+  }
+  #ttl-test {
+    margin-top: 5vh;
+    font-size: 2vmax !important;
+  }
+  .play-p-test {
+    top: 36vh !important;
+    left: 3vw !important;
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: brightness(90%);
+  }
+  50% {
+    filter: brightness(200%);
+  }
+  100% {
+    filter: brightness(90%);
+  }
+}
