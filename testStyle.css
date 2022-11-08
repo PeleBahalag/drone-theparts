@@ -1,16 +1,17 @@
-#lomda,
-#checkTest {
+#lomda {
   direction: ltr;
   top: 5vh;
   left: 82vw;
   width: 13vw;
-  z-index: 9999999999999999999999999999999999;
+  z-index: 999999999999999999;
 }
 
-.center {
-  left: 60% !important;
-  top: 25vh !important;
-  z-index: 999999999999999 !important;
+#checkTest {
+  direction: ltr;
+  top: 76% !important;
+  top: 5vh;
+  left: 65% !important;
+  width: 13vw;
 }
 
 #questions {
@@ -70,16 +71,9 @@
 .right {
   color: green;
 }
-.rightUser {
-  color: rgb(74, 255, 74) !important;
-}
 
 .wrong {
   color: brown;
-}
-
-.wrongUser {
-  color: rgb(234, 85, 85) !important;
 }
 
 #answers {
@@ -122,14 +116,24 @@
 #inside {
   display: none;
   position: relative;
-  width: 55vw;
-  height: 50vh;
-  left: 4vw;
   background-color: white;
-  border: 1vw rgb(170, 196, 223);
   border-style: ridge;
   border-radius: 30px;
-  top: 8vh;
+  top: 12%;
+  width: 80%;
+  left: 9%;
+  height: 78%;
+}
+
+.centered {
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .fh1 {
@@ -188,6 +192,21 @@
 }
 
 @media screen and (max-width: 1500px) {
+  #checkTest {
+    top: 70% !important;
+    left: 60% !important;
+    width: 16vw;
+    padding: 0.3vh 0 3.1vh 0;
+  }
+
+  #lomda {
+    direction: ltr;
+    top: 5vh;
+    left: 82vw;
+    width: 13vw;
+    z-index: 999999999999999999;
+  }
+
   #send {
     top: 85vh;
   }
@@ -209,10 +228,6 @@
   .btn-6 > span {
     font-size: 1.8vh;
   }
-  #lomda {
-    width: 15vw;
-    left: 80vw;
-  }
   #finished {
     width: 65vw;
     height: 60vh;
@@ -221,13 +236,21 @@
   }
   #inside {
     width: 55vw;
-    height: 41vh;
+    height: 20vh;
     left: 4vw;
     top: 8vh;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
+  #lomda {
+    direction: ltr;
+    top: 5vh;
+    left: 76vw;
+    width: 16vw;
+    z-index: 999999999999999999;
+  }
+
   #send {
     top: 85vh;
   }
@@ -251,18 +274,20 @@
   }
   #inside {
     width: 55vw;
-    height: 35vh;
+    height: 25vh;
     left: 4vw;
     top: 6vh;
-  }
-  .center {
-    left: 60% !important;
-    top: 17vh !important;
-    z-index: 999999999999999 !important;
   }
 }
 
 @media screen and (max-width: 1000px) {
+  #lomda {
+    direction: ltr;
+    top: 5vh;
+    left: 76vw;
+    width: 18vw;
+    z-index: 999999999999999999;
+  }
   #questions {
     font-size: 1.8vh;
     width: 80vw;
@@ -275,10 +300,7 @@
   #qList {
     height: 10%;
   }
-  #lomda {
-    width: 19vw;
-    left: 75vw;
-  }
+
   #finished {
     width: 65vw;
     height: 45vh;
@@ -291,14 +313,16 @@
     left: 4vw;
     top: 4vh;
   }
-  .center {
-    left: 54% !important;
-    top: 14vh !important;
-    z-index: 999999999999999 !important;
-  }
 }
 
 @media screen and (max-width: 800px) {
+  #lomda {
+    direction: ltr;
+    top: 20vh;
+    left: 74vw;
+    width: 20vw;
+    z-index: 999999999999999999;
+  }
   #send {
     top: 83vh;
   }
@@ -313,10 +337,6 @@
   }
   #qList {
     height: 10%;
-  }
-  #lomda {
-    width: 26vw;
-    left: 68vw;
   }
 }
 
@@ -336,6 +356,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  #lomda {
+    direction: ltr;
+    top: 20vh;
+    left: 63vw;
+    width: 50vw;
+    z-index: 999999999999999999;
+  }
   #questions {
     font-size: 1.5vh;
     height: 45vh;
@@ -352,13 +379,25 @@
   #questionCount {
     font-size: 2vh;
   }
-  #lomda {
-    width: 35vw;
-    left: 55vw;
-  }
 }
 
 @media (orientation: portrait) {
+  #checkTest {
+    direction: ltr;
+    top: 65% !important;
+    left: 63% !important;
+    padding: 0.3vh 0 3.1vh 0;
+    width: 17vw;
+  }
+
+  #lomda {
+    direction: ltr;
+    top: 20vh;
+    left: 67vw;
+    width: 24vw;
+    padding: 0.8vh 0 3.8vh 0;
+    z-index: 999999999999999999;
+  }
   #questions {
     font-size: 1.2vh;
     height: 30vh;
@@ -375,18 +414,11 @@
   #questionCount {
     font-size: 1.7vh;
   }
-  #lomda {
-    width: 40vw;
-    top: 12vh;
-    left: 50vw;
-    height: 1vh;
-    padding: 1.4vh 0 3.2vh 0;
-  }
+
   #send {
-    width: 40vw;
+    width: 20vw;
     left: 2vw;
-    height: 1vh;
-    padding: 1.4vh 0 3.2vh 0;
+    padding: 0.8vh 0 3.2vh 0;
     top: 70vh;
   }
   #credits {
@@ -431,11 +463,10 @@
     top: 10%;
   }
   #inside {
-    padding: 10% 0 10% 0;
+    top: 12%;
     width: 80%;
     left: 9%;
-    height: 50%;
-    top: 10%;
+    height: 78%;
   }
   .fh1 {
     font-size: 1.7vh;

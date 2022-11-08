@@ -105,6 +105,8 @@ let chosenAnswers = {};
 let color = false;
 
 window.addEventListener("load", () => {
+  sessionStorage.clear();
+
   sessionStorage.setItem("visited", "true");
 
   startTest();
@@ -127,7 +129,6 @@ const startTest = () => {
     document.getElementById("finished").style.display = "block";
     document.getElementById("inside").style.display = "block";
     document.getElementById("confirm").style.display = "none";
-    document.getElementById("checkTest").classList.add("center");
     checkTest();
   });
   document.getElementById("close").addEventListener("click", () => {
@@ -265,7 +266,6 @@ const sendTest = () => {
   } else {
     document.getElementById("confirm").style.display = "none";
     document.getElementById("inside").style.display = "block";
-    document.getElementById("checkTest").classList.add("center");
   }
 };
 
