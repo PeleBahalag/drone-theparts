@@ -237,6 +237,7 @@ const chooseQuestion = (event) => {
       document.getElementById(`ans${correctAns}`).classList.add("right");
 
       if (lastAns === null) {
+        console.log("we might have a problem");
       } else if (lastAns === correctAns) {
         document.getElementById(`ans${lastAns}`).classList.add("right");
       } else {
@@ -362,10 +363,6 @@ const colorAnswers = () => {
       sessionStorage.getItem(`${i + 1}`) ===
       questions[i + 1].correct.replace("a", "")
     ) {
-      console.log(
-        sessionStorage.getItem(`${i + 1}`) ===
-          questions[i + 1].correct.replace("a", "")
-      );
       document.getElementsByClassName("qc")[i].classList.add("rightQ");
     } else {
       document.getElementsByClassName("qc")[i].classList.add("wrongQ");
