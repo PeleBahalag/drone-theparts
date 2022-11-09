@@ -112,6 +112,7 @@ h1 {
 .answer {
   text-align: right;
   cursor: pointer;
+  z-index: 999999999;
 }
 
 .answer:hover {
@@ -120,6 +121,8 @@ h1 {
 
 .pick {
   font-size: 1.9vw;
+  z-index: 0;
+  color: black;
 }
 
 .chosen {

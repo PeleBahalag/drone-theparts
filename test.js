@@ -248,7 +248,7 @@ const chooseQuestion = (event) => {
 };
 
 const chooseAnswer = (event) => {
-  if (!color) {
+  if (!color && event.target.id !== "") {
     event.currentTarget.classList.add("chosen");
     event.currentTarget.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
     if (questions[currentQuestionNumber].chosen !== "") {
