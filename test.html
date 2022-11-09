@@ -94,8 +94,8 @@
 
     <div id="finished">
       <!-- בדוק תשובות -->
-      <button id="checkTest" class="custom-btn btn-6">
-        <span>בחזרה למבחן →</span>
+      <button id="checkTest" class="custom-btn btn-6 hidden">
+        <span>לתשובות שלי →</span>
       </button>
       <div id="inside">
         <div class="centered">
@@ -112,8 +112,12 @@
         <h1 class="fh1">האם אתם בטוחים שתרצו להגיש את המבחן?</h1>
 
         <div id="btnList">
-          <span class="confirmationButton" id="send2">כן, הגש!</span>
-          <span class="confirmationButton" id="close">לא, חזור למבחן</span>
+          <button class="custom-btn btn-6 confirmationButton">
+            <span id="send2">כן, הגש!</span>
+          </button>
+          <button class="custom-btn btn-6 confirmationButton">
+            <span id="close">לא, חזור למבחן</span>
+          </button>
         </div>
       </div>
     </div>

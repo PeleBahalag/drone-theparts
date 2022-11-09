@@ -6,6 +6,14 @@
   z-index: 999999999999999999;
 }
 
+h1 {
+  direction: rtl;
+}
+
+.hidden {
+  display: none;
+}
+
 #checkTest {
   direction: ltr;
   top: 76% !important;
@@ -61,19 +69,27 @@
 }
 
 .answered {
-  background-color: rgba(69, 69, 69, 0.7);
+  filter: brightness(150%);
 }
 
 .current {
-  background-color: rgba(255, 255, 255, 0.7) !important;
+  filter: brightness(60%) !important;
+}
+
+.rightQ {
+  background-color: #136b13;
+}
+
+.wrongQ {
+  background-color: #820b0b;
 }
 
 .right {
-  color: green;
+  color: green !important;
 }
 
 .wrong {
-  color: brown;
+  color: brown !important;
 }
 
 #answers {
@@ -144,14 +160,6 @@
   direction: rtl;
 }
 
-.scorePos {
-  color: green;
-}
-
-.scoreNeg {
-  color: crimson;
-}
-
 #confirm {
   display: none;
   position: relative;
@@ -167,23 +175,18 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  margin: 0;
+  left: 0;
 }
 
 .confirmationButton {
+  position: relative;
+  top: 0vh !important;
   cursor: pointer;
-  font-size: 2vw;
-  width: 17vw;
-  background-color: rgb(179, 201, 224);
+  width: 20%;
+  left: 0;
   text-align: center;
   direction: rtl;
-  border-radius: 20px;
-  filter: drop-shadow(2px 3px 5px);
-  transition: all 0.1s ease;
-}
-
-.confirmationButton:active {
-  background-color: rgb(156, 181, 209);
-  filter: drop-shadow(2px 2px 2px);
 }
 
 #scoreNum {

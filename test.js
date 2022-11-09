@@ -105,39 +105,51 @@ let chosenAnswers = {};
 let color = false;
 
 window.addEventListener("load", () => {
+  // Session Storage clears and set visited page to true
   sessionStorage.clear();
-
   sessionStorage.setItem("visited", "true");
-
-  startTest();
+  // Sets listener - back to the lomda
   document.getElementById("lomda").addEventListener("click", () => {
     window.location.href = "./index.html";
   });
+  // Shows the explaination paragraph and start button
   document.getElementById("start-btn").addEventListener("click", () => {
     document.getElementById("test-starter").style.opacity = "0";
     setTimeout(function () {
       document.getElementById("test-starter").style.zIndex = "-1";
     }, 100);
   });
+  //
+  startTest();
 });
 
+// Calls listeners for buttons
 const startTest = () => {
-  // Configure Send buttons
-  document.getElementById("send").addEventListener("click", sendTest);
-  document.getElementById("send2").addEventListener("click", () => {
-    document.getElementById("send").style.display = "none";
-    document.getElementById("finished").style.display = "block";
-    document.getElementById("inside").style.display = "block";
-    document.getElementById("confirm").style.display = "none";
+  // Configure consts
+  const send = document.getElementById("send"); // כפתור הגש
+  const send2 = document.getElementById("send2"); // כפתור הגש כאשר לא כל השאלות נענו
+  const finished = document.getElementById("finished"); // חלון סיום
+  const inside = document.getElementById("inside"); // תוכן חלון סיום
+  const confirm = document.getElementById("confirm"); // תוכן חלון סיום כאשר לא כל השאלון נענו
+  const checkTestBtn = document.getElementById("checkTest"); //כפתור בדיקת מבחן
+
+  // Add the nesessary listeners
+  send.addEventListener("click", sendTest);
+  send2.addEventListener("click", () => {
+    send.style.display = "none";
+    finished.style.display = "block";
+    inside.style.display = "block";
+    confirm.style.display = "none";
+    checkTestBtn.classList.remove("hidden");
     checkTest();
   });
   document.getElementById("close").addEventListener("click", () => {
     document.getElementById("send").style.display = "block";
-    document.getElementById("finished").style.display = "none";
+    finished.style.display = "none";
   });
-  document.getElementById("checkTest").addEventListener("click", () => {
+  checkTestBtn.addEventListener("click", () => {
     colorAnswers();
-    document.getElementById("finished").style.display = "none";
+    finished.style.display = "none";
   });
 
   //
@@ -184,12 +196,12 @@ const startTest = () => {
   }
 };
 
+// Choose question function
 const chooseQuestion = (event) => {
   currentQuestion.classList.remove("current");
   event.currentTarget.classList.add("current");
 
   currentQuestion = event.currentTarget;
-
   // Change title and questions
   questionTitle.innerText = questions[currentQuestionNumber].q;
   document.getElementById(
@@ -211,61 +223,67 @@ const chooseQuestion = (event) => {
       currentQuestionNumber
     ].chosen.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
   }
-  //If I do want to color the answers Ill list color=true in my arguments.
   if (color) {
     const lastAns = sessionStorage.getItem(`${currentQuestionNumber}`);
+    const correctAns = questions[currentQuestionNumber].correct.replace(
+      "a",
+      ""
+    );
+
     for (let i = 1; i < 5; i++) {
       document.getElementById(`ans${i}`).className = "";
       document.getElementById(`ans${i}`).classList.add("answer");
+      // Show the correct answer
+      document.getElementById(`ans${correctAns}`).classList.add("right");
+
       if (lastAns === null) {
-      } else if (
-        lastAns === questions[currentQuestionNumber].correct.replace("a", "")
-      ) {
+      } else if (lastAns === correctAns) {
         document.getElementById(`ans${lastAns}`).classList.add("right");
       } else {
         document.getElementById(`ans${lastAns}`).classList.add("wrong");
       }
     }
-
-    console.log(lastAns + " answers");
   }
 };
 
 const chooseAnswer = (event) => {
-  event.currentTarget.classList.add("chosen");
-  event.currentTarget.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
-  if (questions[currentQuestionNumber].chosen !== "") {
-    questions[currentQuestionNumber].chosen.classList.remove("chosen");
-    questions[
-      currentQuestionNumber
-    ].chosen.children[0].innerHTML = `<span class="pick"> ▫ </span>`;
-  } else {
-    countAnswered++;
+  if (!color) {
+    event.currentTarget.classList.add("chosen");
+    event.currentTarget.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
+    if (questions[currentQuestionNumber].chosen !== "") {
+      questions[currentQuestionNumber].chosen.classList.remove("chosen");
+      questions[
+        currentQuestionNumber
+      ].chosen.children[0].innerHTML = `<span class="pick"> ▫ </span>`;
+    } else {
+      countAnswered++;
+    }
+    questions[currentQuestionNumber].chosen = event.currentTarget;
+    currentQuestion.classList.add("answered");
+    if (countAnswered === 10) {
+      allAnswered = true;
+      checkTest();
+    }
+    //   chosenAnswers
+    sessionStorage.setItem(
+      `${currentQuestionNumber}`,
+      `${event.target.id.replace("ans", "")}`
+    );
   }
-  questions[currentQuestionNumber].chosen = event.currentTarget;
-  currentQuestion.classList.add("answered");
-  if (countAnswered === 10) {
-    allAnswered = true;
-    checkTest();
-  }
-  //   chosenAnswers
-  sessionStorage.setItem(
-    `${currentQuestionNumber}`,
-    `${event.target.id.replace("ans", "")}`
-  );
 };
 
 // Send test
 const sendTest = () => {
-  document.getElementById("send").style.display = "none";
-  document.getElementById("finished").style.display = "block";
+  send.style.display = "none";
+  finished.style.display = "block";
   // If not all the questions had been answered
   if (!allAnswered) {
     document.getElementById("confirm").style.display = "block";
-    document.getElementById("inside").style.display = "none";
+    inside.style.display = "none";
   } else {
     document.getElementById("confirm").style.display = "none";
-    document.getElementById("inside").style.display = "block";
+    inside.style.display = "block";
+    document.getElementById("checkTest").classList.remove("hidden");
   }
 };
 
@@ -284,23 +302,23 @@ const checkTest = () => {
       }
     }
     document.getElementById("scoreNum").innerText = score;
-    document.getElementById("scoreH1").classList.add("scorePos");
-    document.getElementById("scoreH1").classList.remove("scoreNeg");
+    document.getElementById("scoreH1").classList.add("right");
+    document.getElementById("scoreH1").classList.remove("wrong");
     // 70 and less
     if (score < 80) {
       document.getElementById("message").innerText = "יפה, אך יש מקום לשיפור";
-      document.getElementById("scoreH1").classList.add("scorePos");
-      document.getElementById("scoreH1").classList.remove("scoreNeg");
+      document.getElementById("scoreH1").classList.add("right");
+      document.getElementById("scoreH1").classList.remove("wrong");
       // 50 and less
       if (score < 60) {
         document.getElementById("message").innerText = "חזור על החומר...";
-        document.getElementById("scoreH1").classList.add("scoreNeg");
-        document.getElementById("scoreH1").classList.remove("scorePos");
+        document.getElementById("scoreH1").classList.add("wrong");
+        document.getElementById("scoreH1").classList.remove("right");
         // 20 and less
         if (score < 30) {
           document.getElementById("message").innerText = "סכנת התרסקות!";
-          document.getElementById("scoreH1").classList.add("scoreNeg");
-          document.getElementById("scoreH1").classList.remove("scorePos");
+          document.getElementById("scoreH1").classList.add("wrong");
+          document.getElementById("scoreH1").classList.remove("right");
         }
       }
     }
@@ -308,6 +326,11 @@ const checkTest = () => {
 };
 
 const colorAnswers = () => {
+  const answers = document.querySelectorAll(".answer");
+
+  for (const ans of answers) {
+    ans.style.cssText = `color: black; cursor: auto;`;
+  }
   color = true;
   for (let i = 0; i < questionNumbers.length; i++) {
     questionNumbers[i].replaceWith(questionNumbers[i].cloneNode(true));
@@ -328,6 +351,30 @@ const colorAnswers = () => {
       currentQuestionNumber = i + 1;
       chooseQuestion(event);
     });
+  }
+
+  // Check which questions' answers are correct.
+  for (let i = 0; i < document.getElementsByClassName("qc").length; i++) {
+    if (sessionStorage.getItem(`${i + 1}`) === null) {
+      document.getElementsByClassName("qc")[i].classList.remove("wrongQ");
+      document.getElementsByClassName("qc")[i].classList.remove("rightQ");
+    } else if (
+      sessionStorage.getItem(`${i + 1}`) ===
+      questions[i + 1].correct.replace("a", "")
+    ) {
+      console.log(
+        sessionStorage.getItem(`${i + 1}`) ===
+          questions[i + 1].correct.replace("a", "")
+      );
+      document.getElementsByClassName("qc")[i].classList.add("rightQ");
+    } else {
+      document.getElementsByClassName("qc")[i].classList.add("wrongQ");
+    }
+  }
+
+  // Disable current question pick and set the first question as the one shown
+  for (const q of document.getElementsByClassName("current")) {
+    q.classList.remove("current");
   }
   document.getElementById("firstQ").click();
 };
