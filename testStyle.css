@@ -213,6 +213,7 @@ h1 {
     left: 60% !important;
     width: 18vw;
     padding: 0.3vh 0 3.1vh 0;
+    font-size: 1vh !important;
   }
 
   #lomda {
