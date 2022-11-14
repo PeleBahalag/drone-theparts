@@ -178,7 +178,7 @@ const startTest = () => {
   document.getElementById("ans3").addEventListener("click", chooseAnswer);
   document.getElementById("ans4").addEventListener("click", chooseAnswer);
   for (let i = 0; i < questionNumbers.length; i++) {
-    questionNumbers[i].addEventListener("click", () => {
+    questionNumbers[i].addEventListener("click", (event) => {
       document.getElementById("questionCount").innerText = `${
         i + 1
       }/${questionAmount}`;
@@ -198,10 +198,6 @@ const startTest = () => {
 
 // Choose question function
 const chooseQuestion = (event) => {
-  currentQuestion.classList.remove("current");
-  event.target.classList.add("current");
-
-  currentQuestion = event.target;
   // Change title and questions
   questionTitle.innerText = questions[currentQuestionNumber].q;
   document.getElementById(
@@ -216,13 +212,10 @@ const chooseQuestion = (event) => {
   document.getElementById(
     "ans4"
   ).innerHTML = `<span class="pick"> ▫ </span>${questions[currentQuestionNumber].a4}`;
-  // Load previous answer
-  if (questions[currentQuestionNumber].chosen !== "") {
-    questions[currentQuestionNumber].chosen.classList.add("chosen");
-    questions[
-      currentQuestionNumber
-    ].chosen.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
-  }
+
+  currentQuestion.classList.remove("current");
+  event.target.classList.add("current");
+  currentQuestion = event.target;
   if (color) {
     const lastAns = sessionStorage.getItem(`${currentQuestionNumber}`);
     const correctAns = questions[currentQuestionNumber].correct.replace(
@@ -244,6 +237,14 @@ const chooseQuestion = (event) => {
         document.getElementById(`ans${lastAns}`).classList.add("wrong");
       }
     }
+  }
+
+  // Load previous answer
+  if (questions[currentQuestionNumber].chosen !== "") {
+    questions[currentQuestionNumber].chosen.classList.add("chosen");
+    questions[
+      currentQuestionNumber
+    ].chosen.children[0].innerHTML = `<span class="pick"> ▪ </span>`;
   }
 };
 
