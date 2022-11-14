@@ -504,8 +504,8 @@ h1 {
     font-size: 1.7vh;
   }
   .confirmationButton {
-    font-size: 1.3vh;
-    width: 25vw;
+    font-size: 1vh;
+    width: 50%;
   }
   #scoreH1 {
     font-size: 3vh;
