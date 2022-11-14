@@ -199,9 +199,9 @@ const startTest = () => {
 // Choose question function
 const chooseQuestion = (event) => {
   currentQuestion.classList.remove("current");
-  event.target.classList.add("current");
+  event.currentTarget.classList.add("current");
 
-  currentQuestion = event.target;
+  currentQuestion = event.currentTarget;
   // Change title and questions
   questionTitle.innerText = questions[currentQuestionNumber].q;
   document.getElementById(

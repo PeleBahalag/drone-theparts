@@ -211,7 +211,7 @@ h1 {
   #checkTest {
     top: 70% !important;
     left: 60% !important;
-    width: 16vw;
+    width: 18vw;
     padding: 0.3vh 0 3.1vh 0;
   }
 
@@ -410,8 +410,9 @@ h1 {
     direction: ltr;
     top: 65% !important;
     left: 63% !important;
-    padding: 0.3vh 0 3.1vh 0;
-    width: 17vw;
+    width: 18vw;
+    font-weight: bold;
+    font-size: 1.2vh !important;
   }
   .custom-btn span {
     width: 100%;
@@ -506,12 +507,7 @@ h1 {
   .confirmationButton {
     font-size: 1vh;
     width: 60%;
-    font-weight: 300;
-    padding: 0 0 1.5vh 0;
-  }
-  #checkTest {
-    font-weight: 300;
-    font-size: 1vh;
+    font-weight: bold;
     padding: 0 0 1.5vh 0;
   }
 
