@@ -130,7 +130,8 @@
     font-size: 2.1vmax;
     line-height: 150%;
   }
-  .button-example {
+  .button-example,
+  .button-example2 {
     width: 5vh;
   }
   .information-card {
