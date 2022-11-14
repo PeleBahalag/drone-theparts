@@ -410,9 +410,9 @@ h1 {
     direction: ltr;
     top: 65% !important;
     left: 63% !important;
-    width: 18vw;
+    width: 20vw;
     font-weight: 500;
-    font-size: 1.2vh !important;
+    font-size: 1vh !important;
   }
   .custom-btn span {
     width: 100%;
