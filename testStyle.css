@@ -411,7 +411,7 @@ h1 {
     top: 65% !important;
     left: 63% !important;
     width: 18vw;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.2vh !important;
   }
   .custom-btn span {
@@ -507,7 +507,7 @@ h1 {
   .confirmationButton {
     font-size: 1vh;
     width: 60%;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0 0 1.5vh 0;
   }
 
