@@ -505,8 +505,16 @@ h1 {
   }
   .confirmationButton {
     font-size: 1vh;
-    width: 50%;
+    width: 60%;
+    font-weight: 100;
+    padding: 0 0 1.5vh 0;
   }
+  #checkTest {
+    font-weight: 100;
+    font-size: 1vh;
+    padding: 0 0 1.5vh 0;
+  }
+
   #scoreH1 {
     font-size: 3vh;
   }
