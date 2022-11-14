@@ -402,6 +402,9 @@ h1 {
 }
 
 @media (orientation: portrait) {
+  .answer:hover {
+    color: black;
+  }
   #checkTest {
     direction: ltr;
     top: 65% !important;
