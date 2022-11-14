@@ -230,6 +230,10 @@ h1 {
     top: 8vh;
     font-size: 2vh;
   }
+  .pick {
+    cursor: auto !important;
+  }
+
   .answer,
   .pick {
     font-size: 2.8vh;
