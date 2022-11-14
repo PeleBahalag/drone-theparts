@@ -25,6 +25,15 @@ body {
   margin: 0;
   position: relative;
   direction: rtl;
+  animation: fadeIn 1s ease 3s both;
+}
+
+.button-example2 {
+  display: inline-block;
+  width: 3vw;
+  margin: 0;
+  position: relative;
+  direction: rtl;
   animation: fadeIn 1s ease 5s both;
 }
 
@@ -119,11 +128,11 @@ body {
 }
 
 .test-p1 {
-  animation: fadeIn 1s ease 2s both;
+  animation: fadeIn 1s ease 3s both;
 }
 
 .test-p2 {
-  animation: fadeIn 1s ease 3s both;
+  animation: fadeIn 1s ease 5s both;
 }
 
 .test-p3 {
@@ -131,8 +140,6 @@ body {
   left: 3vmax;
   top: 3vh;
   font-weight: bold;
-  text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 10px rgb(10, 109, 83),
-    0 0 20px rgb(255, 255, 255, 1), 0 0 30px rgb(0, 42, 255);
 }
 
 .start-p {
@@ -153,7 +160,7 @@ body {
 }
 
 #start-btn {
-  animation: fadeIn 1s ease 5s both;
+  animation: fadeIn 1s ease 6s both;
 }
 
 .play {
