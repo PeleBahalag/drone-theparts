@@ -153,6 +153,7 @@ body {
   position: absolute;
   top: 40vh;
   left: 2vw;
+  height: 28%;
   cursor: pointer;
   width: 20vmax;
   transition: all 0.4s ease;
