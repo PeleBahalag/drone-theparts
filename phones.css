@@ -115,15 +115,11 @@
     font-size: 2.6vmax;
   }
   .play-p {
-    top: 43vh;
-    left: 4vw;
+    top: 46vh;
+    height: auto;
   }
   .play {
-    width: 11vmax;
-  }
-  .test-p3 {
-    left: 5vmax;
-    top: 3vh;
+    width: 10vmax;
   }
   .start-p {
     margin: 0;

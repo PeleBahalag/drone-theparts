@@ -136,9 +136,8 @@ body {
 }
 
 .test-p3 {
-  font-size: 2vmax;
-  left: 3vmax;
-  top: 3vh;
+  font-size: 1.8vmax;
+  top: 2%;
   font-weight: bold;
 }
 
@@ -151,13 +150,20 @@ body {
 
 .play-p {
   position: absolute;
-  top: 40vh;
-  left: 2vw;
-  height: 28%;
+  top: 43vh;
+  left: 3vw;
+  height: auto;
+  background-color:rgb(67, 188, 245);
+  box-shadow: 10px 5px 20px rgb(172, 185, 190) ;
+  border-radius: 10px;
   cursor: pointer;
-  width: 20vmax;
+  width: 15vmax;
   transition: all 0.4s ease;
   animation: fadeIn 1s ease 3s both;
+}
+
+.play-p:hover {
+  box-shadow: 5px 5px 15px rgb(172, 185, 190), 5px 5px 20px rgb(68, 72, 74) inset;
 }
 
 #start-btn {
