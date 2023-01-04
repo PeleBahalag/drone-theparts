@@ -88,8 +88,8 @@
   /* חזור */
   #bts1 {
     position: absolute;
-    left: 21vw;
-    top: -8vh;
+    left: 30vw;
+    top: -3vh;
   }
   /* כפתורי צד */
   #bts2 {
@@ -184,6 +184,10 @@
       left: -21vw;
       top: 5vh;
     }
+    .perspArrow {
+      width: 80px;
+      height: 80px;
+    }
     /* רחפן למטה */
     #btd9 {
       position: absolute;
@@ -209,8 +213,8 @@
     /* חזור */
     #btu1 {
       position: absolute;
-      left: 49vw;
-      top: -13vh;
+      left: 48vw;
+      top: 17vh;
     }
     /* GPS */
     #btc9 {
@@ -229,8 +233,8 @@
     }
     /* צד */
     #btc7 {
-      left: -20vw;
-      top: -3vh;
+      left: -2vw;
+      top: 10vh;
     }
     /* כפתור הדלקה */
     #btc2 {
@@ -299,12 +303,7 @@
       left: 67vw;
       top: 49vh;
     }
-    /* חזור */
-    #bts1 {
-      position: absolute;
-      left: 21vw;
-      top: -6vh;
-    }
+
     /* כפתורי צד */
     #bts2 {
       position: absolute;
@@ -380,12 +379,7 @@
       left: 48vw;
       top: 55vh;
     }
-    /* חזור */
-    #bts1 {
-      position: absolute;
-      left: 21vw;
-      top: -6vh;
-    }
+
     /* כפתורי צד */
     #bts2 {
       position: absolute;
@@ -455,12 +449,7 @@
       left: 49vw;
       top: 43vh;
     }
-    /* חזור */
-    #bts1 {
-      position: absolute;
-      left: 21vw;
-      top: -6vh;
-    }
+
     /* כפתורי צד */
     #bts2 {
       position: absolute;
@@ -530,12 +519,7 @@
       left: 49vw;
       top: 43vh;
     }
-    /* חזור */
-    #bts1 {
-      position: absolute;
-      left: 21vw;
-      top: -6vh;
-    }
+
     /* כפתורי צד */
     #bts2 {
       position: absolute;

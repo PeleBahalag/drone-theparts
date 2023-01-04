@@ -37,6 +37,24 @@ body {
   animation: fadeIn 1s ease 5s both;
 }
 
+.perspArrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.perspArrow:hover {
+  transition: all 0.7s linear;
+  transform: rotate(360deg);
+}
+
+.button-example2:hover {
+  transition: all 0.7s linear;
+  transform: rotate(360deg);
+}
+
 #body {
   position: fixed;
   left: 0;
@@ -153,8 +171,8 @@ body {
   top: 43vh;
   left: 3vw;
   height: auto;
-  background-color:rgb(67, 188, 245);
-  box-shadow: 10px 5px 20px rgb(172, 185, 190) ;
+  background-color: rgb(67, 188, 245);
+  box-shadow: 10px 5px 20px rgb(172, 185, 190);
   border-radius: 10px;
   cursor: pointer;
   width: 15vmax;
@@ -163,7 +181,8 @@ body {
 }
 
 .play-p:hover {
-  box-shadow: 5px 5px 15px rgb(172, 185, 190), 5px 5px 20px rgb(68, 72, 74) inset;
+  box-shadow: 5px 5px 15px rgb(172, 185, 190),
+    5px 5px 20px rgb(68, 72, 74) inset;
 }
 
 #start-btn {
@@ -399,8 +418,8 @@ p {
 
 #btd9 {
   position: relative;
-  left: 49vw;
-  top: 77vh;
+  left: 80vw;
+  top: 75vh;
 }
 
 /* נורית חיווי מאחורה */
@@ -465,7 +484,7 @@ p {
 
 #btc7 {
   position: absolute;
-  left: -18vw;
+  left: -25vw;
   top: -11vh;
 }
 
@@ -486,14 +505,6 @@ p {
 }
 
 /* side - page 3 buttons */
-
-/* חזור */
-
-#bts1 {
-  position: absolute;
-  left: 14vw;
-  top: -8vh;
-}
 
 /* כפתורי צד */
 
@@ -520,15 +531,6 @@ p {
 }
 
 /* under - page 4 buttons */
-
-/* חזור */
-
-#btu1 {
-  position: absolute;
-  left: 49.5vw;
-  top: -40vh;
-}
-
 /* Led */
 
 #btu2 {
