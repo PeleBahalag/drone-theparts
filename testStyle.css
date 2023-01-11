@@ -2,7 +2,7 @@
   padding: 0.7rem 1rem;
   font-size: 0.9rem;
   direction: ltr;
-  top: 5vh;
+  top: 2vh;
   right: 3%;
   width: 24%;
   z-index: 99999;
@@ -29,7 +29,7 @@ h1 {
   left: 20vw;
   z-index: 999999;
   margin: 0;
-  top: 2vh;
+  top: 4vh;
   font-size: 1vw;
   width: 60vw;
   height: 60vh;
@@ -211,10 +211,10 @@ h1 {
   }
 
   #send {
-    top: 85vh;
+    top: 82vh;
+    left: 3vw;
   }
   #questions {
-    top: 8vh;
     font-size: 2vh;
   }
   .pick {
@@ -248,9 +248,6 @@ h1 {
 }
 
 @media screen and (max-width: 1100px) {
-  #send {
-    top: 85vh;
-  }
   #questions {
     font-size: 1.8vh;
     width: 70vw;
@@ -291,9 +288,6 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
-  #send {
-    top: 83vh;
-  }
   #questions {
     top: 15vh;
   }
@@ -307,11 +301,10 @@ h1 {
 
 @media (orientation: portrait) {
   #qList {
-    height: 6rem;
+    height: 5rem;
   }
   #lomda {
-    font-size: 0.9rem;
-    direction: ltr;
+    font-size: 2.5rem;
     top: 5vh;
     right: 3%;
     width: 30%;
@@ -334,7 +327,7 @@ h1 {
     width: 90%;
     left: 5%;
     font-size: 1.5rem;
-    height: 35vh;
+    height: 38vh;
     top: 10vh;
   }
   #answers {
@@ -343,12 +336,12 @@ h1 {
   .answer,
   .pick {
     font-size: 2.5rem;
+    line-height: 120%;
   }
   #send {
-    width: 20vw;
-    left: 2vw;
-    padding: 0.8vh 0 3.2vh 0;
-    top: 70vh;
+    font-size: 2.5rem;
+    top: 82vh;
+    left: 3vw;
   }
   #credits {
     padding-top: 1vh;

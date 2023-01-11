@@ -7,7 +7,24 @@
   }
 
   #test span {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  #lomda {
+    width: 25vw;
+    padding: 1rem 5rem;
+  }
+
+  #send {
+    top: 80%;
+    left: 10vw;
+    height: auto;
+    padding: 1rem 5rem;
+  }
+
+  #send span,
+  #lomda span {
+    font-size: 3rem;
   }
 
   .test-p3 {
