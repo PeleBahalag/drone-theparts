@@ -187,10 +187,6 @@
     left: -5vw;
     top: -14.5vh;
   }
-  .play-p {
-    top: 44vh;
-    left: 3vw;
-  }
   .start-p {
     margin: 0;
     font-size: 1.5vmax;
@@ -341,20 +337,10 @@
     left: -6vw;
     top: -13vh;
   }
-  .play-p {
-    top: 45vh;
-    left: 3vw;
-  }
   .start-p {
     margin: 0;
     font-size: 1.8vmax;
     line-height: 150%;
-  }
-  .information-card {
-    top: 20vh;
-    left: 15vw;
-    width: 60vw;
-    height: 60vh;
   }
   .information-test {
     top: 20vh;
@@ -454,10 +440,6 @@
     left: 46vw;
     top: 30vh;
   }
-  .play-p {
-    top: 44vh;
-    left: 5vw;
-  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -545,10 +527,6 @@
   .starter-title {
     font-size: 3.5vmax;
   }
-  .play-p {
-    top: 41vh;
-    left: 8vw;
-  }
   .play-p-test {
     top: 45vh !important;
     left: 5vw !important;
@@ -561,17 +539,11 @@
     font-size: 1.8vmax;
     line-height: 150%;
   }
-  .information-card {
-    top: 20vh;
-    left: 15vw;
-    width: 60vw;
-    height: 60vh;
-  }
   .information-test {
     top: 20vh;
     right: 15vw;
     width: 60vw;
-    height: 60vh;
+    height: 60%;
   }
 }
 
@@ -682,10 +654,7 @@
   #ttl-test {
     margin-top: 5vh;
   }
-  .play-p {
-    top: 38vh;
-    left: 8vw;
-  }
+
   .play-p-test {
     top: 40vh !important;
     left: 5vw !important;
@@ -702,13 +671,13 @@
     top: 20vh;
     left: 10vw;
     width: 70vw;
-    height: 55vh;
+    height: 55%;
   }
   .information-test {
     top: 20vh;
     right: 10vw;
     width: 70vw;
-    height: 55vh;
+    height: 60%;
   }
 }
 
@@ -814,16 +783,8 @@
   .starter-title {
     font-size: 4vmax;
   }
-  .play-p {
-    top: 40vh;
-    left: 8vw;
-  }
   .play {
     width: 13vmax;
-  }
-  .test-p3 {
-    left: 4vmax;
-    top: 3.5vh;
   }
   .start-p {
     margin: 0;
@@ -834,13 +795,13 @@
     top: 20vh;
     left: 10vw;
     width: 70vw;
-    height: 55vh;
+    height: 55%;
   }
   .information-test {
     top: 20vh;
     right: 10vw;
     width: 70vw;
-    height: 55vh;
+    height: 55%;
   }
 }
 
@@ -910,33 +871,19 @@
     margin-top: 7vh;
     font-size: 4vmax;
   }
-  .play-p {
-    top: 42vh;
-    left: 4vw;
-  }
   .play {
     width: 11vmax;
-  }
-  .test-p3 {
-    left: 5vmax;
-    top: 3vh;
   }
   .start-p {
     margin: 0;
     font-size: 2.1vmax;
     line-height: 150%;
   }
-  .information-card {
-    top: 20vh;
-    left: 10vw;
-    width: 70vw;
-    height: 55vh;
-  }
   .information-test {
     top: 20vh;
     right: 10vw;
     width: 70vw;
-    height: 55vh;
+    height: 55%;
   }
   .play-p-test {
     top: 41vh !important;

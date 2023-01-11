@@ -1,4 +1,8 @@
 @media (orientation: portrait) {
+  .test-p3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
   #x {
     margin: 1vh;
     font-size: 4vh;
@@ -114,10 +118,6 @@
     margin-top: 5vh;
     font-size: 2.6vmax;
   }
-  .play-p {
-    top: 46vh;
-    height: auto;
-  }
   .play {
     width: 10vmax;
   }
@@ -131,10 +131,10 @@
     width: 5vh;
   }
   .information-card {
-    top: 10vh;
+    top: 20vh;
     left: 10vw;
     width: 70vw;
-    height: 55vh;
+    height: 45%;
   }
   .information-test .start-p {
     font-size: 1.8vmax;
@@ -142,6 +142,12 @@
   .play-p-test {
     top: 42vh !important;
     left: 5vw !important;
+  }
+  .play-p {
+    left: 23%;
+    padding: 1%;
+    height: auto;
+    width: 50%;
   }
   @media (max-aspect-ratio: 11/12) {
     /* למעלה */
@@ -258,7 +264,6 @@
     }
   }
   @media (max-aspect-ratio: 10/12) {
-    /* למעלה */
     #btd8 {
       left: 47vw;
       top: 37vh;
@@ -400,6 +405,9 @@
     }
   }
   @media (max-aspect-ratio: 7/12) {
+    .information-card {
+      height: 53%;
+    }
     /* למעלה */
     #btd8 {
       left: 47vw;
