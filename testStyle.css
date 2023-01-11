@@ -302,6 +302,7 @@ h1 {
 @media (orientation: portrait) {
   #qList {
     height: 5rem;
+    font-size: 2rem;
   }
   #lomda {
     font-size: 2.5rem;
