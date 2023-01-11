@@ -1,12 +1,12 @@
 @media (orientation: portrait) {
-  .default-button {
+  #test {
     top: 80%;
     left: 10vw;
     height: auto;
     padding: 1rem 5rem;
   }
 
-  .default-button span {
+  #test span {
     font-size: 3.5rem;
   }
 
