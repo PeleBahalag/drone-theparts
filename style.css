@@ -171,16 +171,15 @@ body {
 .default-button {
   position: absolute;
   z-index: 999;
-  top: 80vh;
+  top: 80%;
   left: 4vw;
   height: auto;
-  padding: 0.8rem;
+  padding: 0.7rem 3rem;
   border: none;
   background-color: rgb(67, 188, 245);
   box-shadow: 10px 5px 20px rgb(172, 185, 190);
   border-radius: 10px;
   cursor: pointer;
-  width: 14%;
   transition: all 0.4s ease;
   animation: fadeIn 1s ease 0.1s both;
 }
@@ -188,7 +187,6 @@ body {
 .default-button span {
   font-family: Heebo;
   font-size: 1rem;
-  top: 2%;
   font-weight: 600;
 }
 
