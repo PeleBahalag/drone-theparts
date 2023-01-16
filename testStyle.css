@@ -266,7 +266,7 @@ h1 {
     font-size: 2.5rem;
   }
   #finished {
-    height: 30%;
+    height: 40%;
     top: 25vh;
   }
   #qList {
@@ -358,7 +358,7 @@ h1 {
     font-weight: 500;
   }
   .confirmationButton span {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   #scoreH1 {
