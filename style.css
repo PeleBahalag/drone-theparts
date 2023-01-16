@@ -92,11 +92,7 @@ body {
   height: 100vh;
   user-select: none;
   overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(139, 189, 223) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #8bbddf 100%);
   margin: 0;
   opacity: 1;
   transition: all 1s ease;
@@ -174,13 +170,13 @@ body {
 }
 
 .default-button {
-  color: black;
+  color: white;
   position: absolute;
   z-index: 999;
   height: auto;
   padding: 0.7rem 3rem;
   border: none;
-  background-color: rgb(67, 188, 245);
+  background-color: #505664;
   box-shadow: 10px 5px 20px rgb(172, 185, 190);
   border-radius: 10px;
   cursor: pointer;
@@ -200,11 +196,12 @@ body {
 }
 
 .play-p {
+  color: white;
   position: absolute;
   bottom: 5%;
   left: 30%;
   height: auto;
-  background-color: rgb(67, 188, 245);
+  background-color: #505664;
   box-shadow: 10px 5px 20px rgb(172, 185, 190);
   border-radius: 10px;
   cursor: pointer;

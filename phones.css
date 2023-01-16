@@ -10,6 +10,11 @@
     font-size: 3rem;
   }
 
+  #checkTest {
+    height: auto;
+    padding: 1rem;
+  }
+
   #lomda {
     width: 25vw;
     padding: 1rem 5rem;
