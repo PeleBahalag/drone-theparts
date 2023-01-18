@@ -1,4 +1,10 @@
 @media (orientation: portrait) {
+  #btd9,
+  #btu1 {
+    transform: rotateZ(90deg);
+    left: 53vw !important;
+  }
+
   #test {
     top: 80%;
     left: 10vw;
